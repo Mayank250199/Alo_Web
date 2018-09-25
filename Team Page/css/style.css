@@ -138,7 +138,7 @@ body {
   font-weight: 400;
   text-align: left;
   position: relative;
-  background-color: #171717;
+  background-color: rgb(39, 48, 64);
 }
 a {
   text-decoration: none !important;
@@ -922,10 +922,10 @@ section.section {
   box-shadow: 2px 4.33px 25px 0px rgba(0, 0, 0, 0.25) ;
 }
 .testimonial-section .testimonial-wrapper .owl-wrapper-outer .owl-wrapper {
-  background-color: #171717;
+  background-color:rgb(39, 208, 215);
 }
 .testimonial-section .testimonial-wrapper .owl-item {
-  background-color: #171717;
+  background-color: rgb(39, 208, 215);
 }
 .testimonial-section .testimonial-wrapper .item {
   padding: 0 80px;
