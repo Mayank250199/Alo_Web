@@ -1,0 +1,8 @@
+<wpml-config>
+	<admin-texts>
+		<key name="fw_theme_settings_options:vivian">
+			<key name="logo_name"/>
+			<key name="footer"/>
+		</key>
+	</admin-texts>
+</wpml-config>
