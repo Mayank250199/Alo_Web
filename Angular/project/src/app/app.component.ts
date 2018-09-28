@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+declare const require:any;
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  ngAfterViewInit() {
+    //We loading the script on after view is loaded
+    import('../assets/full_pageJs/main.js');
+  }
 }

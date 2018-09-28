@@ -6,6 +6,10 @@ import { TeamPageComponent } from './component/team-page/team-page.component';
 import { MainPageComponent } from './component/main-page/main-page.component';
 import { CubePageComponent } from './component/cube-page/cube-page.component';
 
+//fullpage
+//import { MnFullpageModule } from 'ngx-fullpage';
+//import { MnFullpageDirective, MnFullpageService } from "ngx-fullpage";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,9 +18,13 @@ import { CubePageComponent } from './component/cube-page/cube-page.component';
     CubePageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    //MnFullpageModule.forRoot() ,
+    //MnFullpageDirective
   ],
-  providers: [],
+  providers: [
+    //MnFullpageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
