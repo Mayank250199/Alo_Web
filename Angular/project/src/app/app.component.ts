@@ -1,11 +1,5 @@
-import { Component } from '@angular/core';
-
-import 'jquery'; // Import jQuery
-
-declare const $: any;
-
-import 'fullpage.js'; // Import fullpage.js
-
+import { Component, OnInit } from '@angular/core';
+declare const require:any;
 
 @Component({
   selector: 'app-root',
@@ -14,4 +8,8 @@ import 'fullpage.js'; // Import fullpage.js
 })
 export class AppComponent {
   title = 'app';
+  ngAfterViewInit() {
+    //We loading the script on after view is loaded
+    import('../assets/full_pageJs/main.js');
+  }
 }

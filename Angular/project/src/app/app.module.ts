@@ -7,8 +7,8 @@ import { MainPageComponent } from './component/main-page/main-page.component';
 import { CubePageComponent } from './component/cube-page/cube-page.component';
 
 //fullpage
-import { MnFullpageModule } from 'ngx-fullpage';
-import { MnFullpageDirective, MnFullpageService } from "ng2-fullpage";
+//import { MnFullpageModule } from 'ngx-fullpage';
+//import { MnFullpageDirective, MnFullpageService } from "ngx-fullpage";
 
 @NgModule({
   declarations: [
@@ -19,11 +19,11 @@ import { MnFullpageDirective, MnFullpageService } from "ng2-fullpage";
   ],
   imports: [
     BrowserModule,
-    MnFullpageModule.forRoot() ,
-    MnFullpageDirective
+    //MnFullpageModule.forRoot() ,
+    //MnFullpageDirective
   ],
   providers: [
-    MnFullpageService
+    //MnFullpageService
   ],
   bootstrap: [AppComponent]
 })

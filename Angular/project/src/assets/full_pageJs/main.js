@@ -3884,6 +3884,7 @@ var fullpage = require('fullpage.js');
 
 // Initializing it
 var fullPageInstance = new fullpage('#myFullpage', {
+    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
     navigation: true,
     sectionsColor:['#ff5f45', '#0798ec', '#fc6c7c', 'grey']
 });
