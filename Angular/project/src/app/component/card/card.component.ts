@@ -26,7 +26,7 @@ export class CardComponent implements AfterViewInit{
     {image: '../../../assets/Card_page/807.jpg'}
   ];
   
-  owl(){
+  owl(){ 
   
  
           $(document).ready(function(){
