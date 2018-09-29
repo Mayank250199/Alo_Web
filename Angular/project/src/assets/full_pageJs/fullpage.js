@@ -3926,6 +3926,6 @@ if(window.jQuery && window.fullpage){
 window['myFullpage'] = new fullpage('#mfullpage', {
     licenseKey:'OPEN-SOURCE-GPLV3-LICENSE',
     anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
-    sectionsColor: ['#4A6FB1', '#939FAA', '#323539'],
+    sectionsColor: ['#212C3E', '#939FAA', '#323539'],
     scrollOverflow: true
   });
