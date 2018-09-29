@@ -22,7 +22,7 @@ export class CardComponent implements AfterViewInit{
     {image: '../../../assets/Card_page/emotional front.png'},
     {image: '../../../assets/Card_page/law front.png'},
     {image: '../../../assets/Card_page/product design.png'},
-    {image: '../../../assets/Card_page/social front.jpg'}
+    {image: '../../../assets/Card_page/social front.png'}
   ];
 
   owl(){
