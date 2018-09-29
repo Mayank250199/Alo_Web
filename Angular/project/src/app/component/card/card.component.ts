@@ -18,17 +18,16 @@ export class CardComponent implements AfterViewInit{
   }
 
   slides = [
-    {image: '../../../assets/Card_page/3.jpg'},
-    {image: '../../../assets/Card_page/3bg.jpg'},
-    {image: '../../../assets/Card_page/78.jpg'},
-    {image: '../../../assets/Card_page/79.jpg'},
-    {image: '../../../assets/Card_page/89.jpg'},
-    {image: '../../../assets/Card_page/807.jpg'}
+    {image: '../../../assets/Card_page/Electrical front.png'},
+    {image: '../../../assets/Card_page/emotional front.png'},
+    {image: '../../../assets/Card_page/law front.png'},
+    {image: '../../../assets/Card_page/product design.png'},
+    {image: '../../../assets/Card_page/social front.jpg'}
   ];
-  
-  owl(){ 
-  
- 
+
+  owl(){
+
+
           $(document).ready(function(){
             $('.owl-carousel').owlCarousel({
                 loop:true,
@@ -53,11 +52,9 @@ export class CardComponent implements AfterViewInit{
           }
       }
             })
-  
+
           })
         }
-    
-  
+
+
   }
-
-
