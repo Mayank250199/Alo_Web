@@ -5,7 +5,7 @@ body{
 .bg1{
 
     background-image: url('background_layer2.png'),url('background.svg');
-    background-size: 100% 100%, 100%;
+    background-size: 100% 100%;
 }
 .center{
     text-align: center;
