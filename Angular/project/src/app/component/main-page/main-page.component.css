@@ -3,8 +3,10 @@ body{
   color: #00ecf1 !important;
 }
 .bg1{
+
+    overflow: hidden;
     background-image: url('background_layer2.png'),url('background.svg');
-    background-size: 100% 100%, 100%;
+    background-size: 100% 100%;
 }
 .center{
     text-align: center;
