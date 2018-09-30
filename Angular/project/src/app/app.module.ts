@@ -6,6 +6,7 @@ import { TeamPageComponent } from './component/team-page/team-page.component';
 import { MainPageComponent } from './component/main-page/main-page.component';
 import { CubePageComponent } from './component/cube-page/cube-page.component';
 import { CardComponent } from './component/card/card.component';
+import { PanoramaComponent } from './component/panorama/panorama.component';
 
 //fullpage
 //import { MnFullpageModule } from 'ngx-fullpage';
@@ -17,7 +18,8 @@ import { CardComponent } from './component/card/card.component';
     TeamPageComponent,
     MainPageComponent,
     CubePageComponent,
-    CardComponent
+    CardComponent,
+    PanoramaComponent
   ],
   imports: [
     BrowserModule,
