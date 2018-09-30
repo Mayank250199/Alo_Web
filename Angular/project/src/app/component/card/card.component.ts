@@ -30,7 +30,7 @@ export class CardComponent implements AfterViewInit{
 
           $(document).ready(function(){
             $('.owl-carousel').owlCarousel({
-                // stagePadding: 0,
+                stagePadding: 200,
                 loop:true,
                 margin:5,
                 nav:false,
@@ -38,23 +38,23 @@ export class CardComponent implements AfterViewInit{
                 responsive:{
           0:{
               items:1,
-            //   stagePadding: 0,
+              stagePadding: 60,
           },
           600:{
-              items:4,
-            //   stagePadding: 0,
+              items:1,
+              stagePadding: 100,
           },
           1000:{
-              items:4,
-            //   stagePadding: 0,
+              items:1,
+              stagePadding: 150,
           },
           1100:{
-              items:4,
-            //   stagePadding: 0,
+              items:1,
+              stagePadding: 200,
           },
           1200:{
-              items:4,
-            //   stagePadding: 0,
+              items:2,
+              stagePadding: 250,
           }
       }
             })
