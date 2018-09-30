@@ -18,46 +18,49 @@ export class CardComponent implements AfterViewInit{
   }
 
   slides = [
-    {image: '../../../assets/Card_page/3.jpg'},
-    {image: '../../../assets/Card_page/3bg.jpg'},
-    {image: '../../../assets/Card_page/78.jpg'},
-    {image: '../../../assets/Card_page/79.jpg'},
-    {image: '../../../assets/Card_page/89.jpg'},
-    {image: '../../../assets/Card_page/807.jpg'}
+    {image: '../../../assets/Card_page/Electrical front.png'},
+    {image: '../../../assets/Card_page/emotional front.png'},
+    {image: '../../../assets/Card_page/law front.png'},
+    {image: '../../../assets/Card_page/product design.png'},
+    {image: '../../../assets/Card_page/social front.png'}
   ];
-  
-  owl(){ 
-  
- 
+
+  owl(){
+
+
           $(document).ready(function(){
             $('.owl-carousel').owlCarousel({
+                // stagePadding: 0,
                 loop:true,
-                margin:10,
+                margin:5,
                 nav:false,
                 dots:false,
                 responsive:{
           0:{
-              items:1
+              items:1,
+            //   stagePadding: 0,
           },
           600:{
-              items:3
+              items:4,
+            //   stagePadding: 0,
           },
           1000:{
-              items:3
+              items:4,
+            //   stagePadding: 0,
           },
           1100:{
-              items:3
+              items:4,
+            //   stagePadding: 0,
           },
           1200:{
-              items:3
+              items:4,
+            //   stagePadding: 0,
           }
       }
             })
-  
+
           })
         }
-    
-  
+
+
   }
-
-
