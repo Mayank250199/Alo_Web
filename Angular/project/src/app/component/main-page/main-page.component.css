@@ -3,7 +3,11 @@ body{
   color: #00ecf1 !important;
 }
 .bg1{
+<<<<<<< HEAD
+    overflow: hidden;
+=======
 
+>>>>>>> 0635e0984d40b3e725a4ecb4fb41474c2087fdae
     background-image: url('background_layer2.png'),url('background.svg');
     background-size: 100% 100%;
 }
