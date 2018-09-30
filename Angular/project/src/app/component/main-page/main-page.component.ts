@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, AfterViewInit} from '@angular/core';
 import * as $ from 'jquery';
 
 declare var $:any;
@@ -7,7 +7,7 @@ declare var $:any;
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.css']
 })
-export class MainPageComponent implements OnInit {
+export class MainPageComponent implements AfterViewInit {
 
   constructor() { }
 
