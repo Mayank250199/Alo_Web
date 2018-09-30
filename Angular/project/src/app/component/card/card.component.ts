@@ -69,5 +69,5 @@ export class CardComponent implements AfterViewInit{
         })
         }
 
-      
+
   }
