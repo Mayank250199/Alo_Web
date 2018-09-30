@@ -27,6 +27,7 @@ export class Scroller{
         return pos;
     }
     onScroll(){
+        if(scrolling) return;
         var diff = (this.last_top_position - this.out_element.scrollTop);
         if(diff == 0) return;
         var scrolled_up = diff > 0;
@@ -57,7 +58,9 @@ export class Scroller{
         scrollTo(this.out_element, to, duration);
     }
 }
+var scrolling = false;
 function scrollTo(element, to, duration) {
+    scrolling = true;
     var start = element.scrollTop,
         change = to - start,
         currentTime = 0,
@@ -70,6 +73,7 @@ function scrollTo(element, to, duration) {
         if(currentTime < duration) {
             setTimeout(animateScroll, increment);
         }
+        else scrolling = false;
     };
     animateScroll();
 }
