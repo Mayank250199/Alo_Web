@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-declare const require:any;
-declare var fullpage:any;
+//declare const require:any;
+//declare var fullpage:any;
+import { Scroller } from './scroller';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,7 +12,7 @@ export class AppComponent {
   ngAfterViewInit() {
     //We loading the script on after view is loaded
 
-    import('../assets/full_pageJs/scrolloverflow.js')
+    /*import('../assets/full_pageJs/scrolloverflow.js')
       .then(()=>{
         import('../assets/full_pageJs/fullpage.js')
           .then(()=>{
@@ -23,7 +24,8 @@ export class AppComponent {
             });
             console.log('full page is now ready')
           })
-      })
+      })*/
+      new Scroller(document.getElementById('mfullpage'));
     
   }
 }
