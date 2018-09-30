@@ -1,11 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-<<<<<<< HEAD
 ::-webkit-scrollbar{
     width: 0;
 }
-=======
 * {
     font-family: Raleway /*Replace with your custom font*/, sans-serif !important; 
     /*Add the !important to overwrite all elements*/
   }
->>>>>>> 14603b750bc38c94f9eb0ee64ab4b88f283b7316
