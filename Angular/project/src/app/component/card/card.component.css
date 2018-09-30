@@ -1,5 +1,5 @@
 .item{
-  opacity:0.4;
+  opacity:0.9;
   transition:.4s ease all;
   margin:0px;
   transform:scale(.8);
@@ -10,7 +10,7 @@
 .item:active{
   opacity:1;
   transform:scale(1);
-} 
+}
 
 
 .owl-item {
