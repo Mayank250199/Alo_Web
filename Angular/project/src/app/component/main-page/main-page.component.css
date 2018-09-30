@@ -5,7 +5,7 @@ body{
 .bg1{
 
     overflow: hidden;
-    background-image: url('background_layer2.png'),url('background.svg');
+    background-image: url('banner.png');
     background-size: 100% 100%;
 }
 .center{
