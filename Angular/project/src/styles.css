@@ -2,7 +2,11 @@
 ::-webkit-scrollbar{
     width: 0;
 }
+@font-face {
+    font-family: myFirstFont;
+    src: url('./assets/semplicita.medium.otf');
+}
 * {
-    font-family: Raleway /*Replace with your custom font*/, sans-serif !important;
+    font-family: myFirstFont /*Replace with your custom font*/, sans-serif !important;
     /*Add the !important to overwrite all elements*/
   }
