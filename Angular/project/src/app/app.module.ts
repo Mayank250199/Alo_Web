@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { TeamPageComponent } from './component/team-page/team-page.component';
@@ -26,6 +26,9 @@ import { PanoramaComponent } from './component/panorama/panorama.component';
     //MnFullpageModule.forRoot() ,
     //MnFullpageDirective
   ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+],
   providers: [
     //MnFullpageService
   ],
