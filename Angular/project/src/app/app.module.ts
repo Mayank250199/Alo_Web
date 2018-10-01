@@ -7,10 +7,16 @@ import { MainPageComponent } from './component/main-page/main-page.component';
 import { CubePageComponent } from './component/cube-page/cube-page.component';
 import { CardComponent } from './component/card/card.component';
 import { PanoramaComponent } from './component/panorama/panorama.component';
-
+import {RouterModule, Routes} from '@angular/router';
+import { OuterpageComponent } from './component/outerpage/outerpage.component';
 //fullpage
 //import { MnFullpageModule } from 'ngx-fullpage';
 //import { MnFullpageDirective, MnFullpageService } from "ngx-fullpage";
+const appRouts=[
+  {path: 'team-page', component: TeamPageComponent, },
+  {path: 'home', component: OuterpageComponent, pathMatch: 'full'},
+  {path:'', pathMatch:'full', redirectTo:'/home'}
+]
 
 @NgModule({
   declarations: [
@@ -19,10 +25,13 @@ import { PanoramaComponent } from './component/panorama/panorama.component';
     MainPageComponent,
     CubePageComponent,
     CardComponent,
-    PanoramaComponent
+    PanoramaComponent,
+    OuterpageComponent,
   ],
   imports: [
+    RouterModule.forRoot(appRouts, {enableTracing:true}),
     BrowserModule,
+
     //MnFullpageModule.forRoot() ,
     //MnFullpageDirective
   ],
