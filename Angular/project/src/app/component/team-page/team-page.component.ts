@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamPageComponent implements OnInit {
 
-  team_members=[
+  team_members_top=[
     {
       name:'Anoosh Kotak',
       pic_name: 'Anuj_Chopra.jpg',
@@ -25,7 +25,8 @@ export class TeamPageComponent implements OnInit {
       pic_name: 'Anuj_Chopra.jpg',
       position:'VP of Product Visa',
       details: 'This is the tribune to tailava, I love my PC, bla bla bla, thats it'
-    },
+    }];
+    team_members_rest=[
     {
       name:'Anoosh Kotak',
       pic_name: 'Anuj_Chopra.jpg',

@@ -36,9 +36,30 @@
                       <div class="clearfix"></div>
 
                       <div class="col-sm-12 grid-item m-t-30">
-                          <div class="row">
+                            <div class="row">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 each-item overflow text-center relative wow"
+                                            *ngFor="let member of this.team_members_top"
+                                            style="width: -webkit-fill-available;">
+                                            <div class="item-inner overflow absolute">
+                                                <div class="profile-outer center">
+                                                    <div class="profile-image">
+                                                        <img src="../../../assets/Team_page/images/team-members/{{ member.pic_name }}" alt="Team Member" class="">
+                                                    </div>
+                                                <div class="profile-content">
+                                                    <span class="name">{{ member.name }}</span>
+                                                    <span class="position">{{ member.position }}</span>
+                                                </div>
+                                            </div>
+                                            <div class="content-detail">
+                                                <p>{{ member.details }}</p>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                            </div>                               
+                        <div class="row">
                                 <div class="col-md-3 col-sm-6 col-xs-12 each-item overflow text-center relative wow"
-                                    *ngFor="let member of this.team_members"
+                                    *ngFor="let member of this.team_members_rest"
                                     style="width: -webkit-fill-available;">
                                     <div class="item-inner overflow absolute">
                                         <div class="profile-outer center">
@@ -57,6 +78,7 @@
                                 </div>
                             </div>
                         </div>
+
                       </div> <!-- End: .col-xs-12 -->
 
                   </div> <!-- End: .row -->
