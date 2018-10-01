@@ -4,11 +4,11 @@
         ====================================-->
               <!-- Start: Page Slider Area
         ================================== -->
-        <section class="content-area" id="fullpage">
+        <section class="content-area">
           <div class="container-fluid">
               <div class="row">
 
-      <div class=" section section-item combine-section hide-overlay overflow dark-background" id="team-section ">
+      <div class="section section-item combine-section hide-overlay overflow dark-background" style="width:100%;" id="team-section ">
           <div class="inner-container team-member dark-background">
               <div class="container">
                   <div class="row section-separator sp-bottom">
@@ -37,154 +37,26 @@
 
                       <div class="col-sm-12 grid-item m-t-30">
                           <div class="row">
+                                <div class="col-md-3 col-sm-6 col-xs-12 each-item overflow text-center relative wow"
+                                    *ngFor="let member of this.team_members"
+                                    style="width: -webkit-fill-available;">
+                                    <div class="item-inner overflow absolute">
+                                        <div class="profile-outer center">
+                                            <div class="profile-image">
+                                                <img src="../../../assets/Team_page/images/team-members/{{ member.pic_name }}" alt="Team Member" class="">
+                                            </div>
+                                        <div class="profile-content">
+                                            <span class="name">{{ member.name }}</span>
+                                            <span class="position">{{ member.position }}</span>
+                                        </div>
+                                    </div>
+                                    <div class="content-detail">
+                                        <p>{{ member.details }}</p>
+                                    </div>
 
-                              <div class="col-md-3 col-sm-6 col-xs-12 each-item overflow text-center relative wow">
-                                  <div class="item-inner overflow absolute">
-
-                                      <div class="profile-outer center">
-                                          <div class="profile-image">
-                                              <img src="../../../assets/Team_page/images/team-members/Anuj_Chopra.jpg" alt="Team Member" class="">
-                                          </div>
-                                          <div class="profile-content">
-                                              <span class="name">ANTHONY WATKINS</span>
-                                              <span class="position">VP of Product, VISA</span>
-                                          </div>
-                                      </div>
-                                      <div class="content-detail">
-                                          <p>Vincent is the Founder &amp; CEO of Fusion. He is leading  the company to success with his experience &amp; skill. Leader piverate paradigm cortado ship it integrate Space Team parallax persons grok. Parallax food truck fund 360 campaign venture capital pitch deck actionable insight innovate.</p>
-                                      </div>
-
-                                  </div>
-                              </div> <!-- End: .each-item -->
-                              <div class="col-md-3 col-sm-6 col-xs-12 each-item overflow text-center relative wow">
-                                  <div class="item-inner overflow absolute">
-
-                                      <div class="profile-outer center">
-                                          <div class="profile-image">
-                                              <img src="../../../assets/Team_page/images/team-members/Ashutosh_Gamad.jpg" alt="Team Member" class="">
-                                          </div>
-                                          <div class="profile-content">
-                                              <span class="name">ANTHONY WATKINS</span>
-                                              <span class="position">VP of Product, VISA</span>
-                                          </div>
-                                      </div>
-                                      <div class="content-detail">
-                                          <p>Vincent is the Founder &amp; CEO of Fusion. He is leading  the company to success with his experience &amp; skill. Leader piverate paradigm cortado ship it integrate Space Team parallax persons grok. Parallax food truck fund 360 campaign venture capital pitch deck actionable insight innovate.</p>
-                                      </div>
-
-                                  </div>
-                              </div> <!-- End: .each-item -->
-                              <div class="col-md-3 col-sm-6 col-xs-12 each-item overflow text-center relative wow">
-                                  <div class="item-inner overflow absolute">
-
-                                      <div class="profile-outer center">
-                                          <div class="profile-image">
-                                              <img src="../../../assets/Team_page/images/team-members/Divyarth_Saxena.png" alt="Team Member" class="">
-                                          </div>
-                                          <div class="profile-content">
-                                              <span class="name">ANTHONY WATKINS</span>
-                                              <span class="position">VP of Product, VISA</span>
-                                          </div>
-                                      </div>
-                                      <div class="content-detail">
-                                          <p>Vincent is the Founder &amp; CEO of Fusion. He is leading  the company to success with his experience &amp; skill. Leader piverate paradigm cortado ship it integrate Space Team parallax persons grok. Parallax food truck fund 360 campaign venture capital pitch deck actionable insight innovate.</p>
-                                      </div>
-
-                                  </div>
-                              </div> <!-- End: .each-item -->
-                              <div class="col-md-3 col-sm-6 col-xs-12 each-item overflow text-center relative wow">
-                                  <div class="item-inner overflow absolute">
-
-                                      <div class="profile-outer center">
-                                          <div class="profile-image">
-                                              <img src="../../../assets/Team_page/images/team-members/Nishank_Goyal.jpg" alt="Team Member" class="">
-                                          </div>
-                                          <div class="profile-content">
-                                              <span class="name">ANTHONY WATKINS</span>
-                                              <span class="position">VP of Product, VISA</span>
-                                          </div>
-                                      </div>
-                                      <div class="content-detail">
-                                          <p>Vincent is the Founder &amp; CEO of Fusion. He is leading  the company to success with his experience &amp; skill. Leader piverate paradigm cortado ship it integrate Space Team parallax persons grok. Parallax food truck fund 360 campaign venture capital pitch deck actionable insight innovate.</p>
-                                      </div>
-
-                                  </div>
-                              </div> <!-- End: .each-item -->
-                              <div class="col-md-3 col-sm-6 col-xs-12 each-item overflow text-center relative wow">
-                                  <div class="item-inner overflow absolute">
-
-                                      <div class="profile-outer center">
-                                          <div class="profile-image">
-                                              <img src="../../../assets/Team_page/images/team-members/Rajeshwari_Kamble.jpeg" alt="Team Member" class="">
-                                          </div>
-                                          <div class="profile-content">
-                                              <span class="name">ANTHONY WATKINS</span>
-                                              <span class="position">VP of Product, VISA</span>
-                                          </div>
-                                      </div>
-                                      <div class="content-detail">
-                                          <p>Vincent is the Founder &amp; CEO of Fusion. He is leading  the company to success with his experience &amp; skill. Leader piverate paradigm cortado ship it integrate Space Team parallax persons grok. Parallax food truck fund 360 campaign venture capital pitch deck actionable insight innovate.</p>
-                                      </div>
-
-                                  </div>
-                              </div> <!-- End: .each-item -->
-                              <div class="col-md-3 col-sm-6 col-xs-12 each-item overflow text-center relative wow">
-                                  <div class="item-inner overflow absolute">
-
-                                      <div class="profile-outer center">
-                                          <div class="profile-image">
-                                              <img src="../../../assets/Team_page/images/team-members/Siddhant_Goel.jpg" alt="Team Member" class="">
-                                          </div>
-                                          <div class="profile-content">
-                                              <span class="name">ANTHONY WATKINS</span>
-                                              <span class="position">VP of Product, VISA</span>
-                                          </div>
-                                      </div>
-                                      <div class="content-detail">
-                                          <p>Vincent is the Founder &amp; CEO of Fusion. He is leading  the company to success with his experience &amp; skill. Leader piverate paradigm cortado ship it integrate Space Team parallax persons grok. Parallax food truck fund 360 campaign venture capital pitch deck actionable insight innovate.</p>
-                                      </div>
-
-                                  </div>
-                              </div> <!-- End: .each-item -->
-                              <div class="col-md-3 col-sm-6 col-xs-12 each-item overflow text-center relative wow">
-                                  <div class="item-inner overflow absolute">
-
-                                      <div class="profile-outer center">
-                                          <div class="profile-image">
-                                              <img src="../../../assets/Team_page/images/team-members/Siddharth Choubay.jpg" alt="Team Member" class="">
-                                          </div>
-                                          <div class="profile-content">
-                                              <span class="name">ANTHONY WATKINS</span>
-                                              <span class="position">VP of Product, VISA</span>
-                                          </div>
-                                      </div>
-                                      <div class="content-detail">
-                                          <p>Vincent is the Founder &amp; CEO of Fusion. He is leading  the company to success with his experience &amp; skill. Leader piverate paradigm cortado ship it integrate Space Team parallax persons grok. Parallax food truck fund 360 campaign venture capital pitch deck actionable insight innovate.</p>
-                                      </div>
-
-                                  </div>
-                              </div> <!-- End: .each-item -->
-                              <div class="col-md-3 col-sm-6 col-xs-12 each-item overflow text-center relative wow">
-                                  <div class="item-inner overflow absolute">
-
-                                      <div class="profile-outer center">
-                                          <div class="profile-image">
-                                              <img src="../../../assets/Team_page/images/team-members/Sumir_Kumar.jpeg" alt="Team Member" class="">
-                                          </div>
-                                          <div class="profile-content">
-                                              <span class="name">ANTHONY WATKINS</span>
-                                              <span class="position">VP of Product, VISA</span>
-                                          </div>
-                                      </div>
-                                      <div class="content-detail">
-                                          <p>Vincent is the Founder &amp; CEO of Fusion. He is leading  the company to success with his experience &amp; skill. Leader piverate paradigm cortado ship it integrate Space Team parallax persons grok. Parallax food truck fund 360 campaign venture capital pitch deck actionable insight innovate.</p>
-                                      </div>
-
-                                  </div>
-                              </div> <!-- End: .each-item -->
-
-
-                          </div>
+                                </div>
+                            </div>
+                        </div>
                       </div> <!-- End: .col-xs-12 -->
 
                   </div> <!-- End: .row -->
