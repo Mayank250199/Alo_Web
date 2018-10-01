@@ -3,7 +3,7 @@ body{
   color: #00ecf1 !important;
 }
 .bg1{
-
+    height: -webkit-fill-available;
     overflow: hidden;
     background-image: url('banner.png');
     background-size: 100% 100%;

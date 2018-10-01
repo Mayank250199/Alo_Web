@@ -11,20 +11,62 @@ declare var $:any;
 })
 export class CardComponent implements AfterViewInit{
 
-  constructor() { }
+  constructor() {}
+  ngOnInit(){
 
-  ngAfterViewInit() {
-    this.owl();
   }
+  ngAfterViewInit() {
+    //this.owl();
+    console.log('i was here');
+    document.getElementById('slider').draggable = true;
+    document.getElementById('slider').ondragstart = (e)=>{
+        prevslx = e.screenX;
+        //console.log('start');
+    };
+    document.getElementById('slider').ondrag = onSlide;
+
+  }
+  
 
   slides = [
-    {image: '../../../assets/Card_page/Electrical front.png'},
-    {image: '../../../assets/Card_page/emotional front.png'},
-    {image: '../../../assets/Card_page/law front.png'},
-    {image: '../../../assets/Card_page/product design.png'},
-    {image: '../../../assets/Card_page/social front.png'}
+    '../../../assets/Card_page/Electrical front.png',
+    '../../../assets/Card_page/emotional front.png',
+    '../../../assets/Card_page/law front.png',
+    '../../../assets/Card_page/product design.png',
+    '../../../assets/Card_page/social front.png'
   ];
+  slide(dir){
+      slide(dir);
+  }
+}
+var prevslx=0, direction=0, curr=3;
+function slide(dir){
+    curr += dir;
+    if(curr==6) curr=1;
+    else if(curr == 0) curr = 5;
+    
+    document.getElementById('s'+curr).checked = true;
+}
+function onSlide(e){
+    //console.log(prevslx);
+    if(e.screenX == 0) {
+        //prevslx=0;
+       slide(direction);
+        
+        return;
+    }
+    if(prevslx-e.screenX > 0){
+        //console.log('left');
+        direction=1;
+    }
+    else if(prevslx-e.screenX < 0){
+        //console.log('right');
+        direction=-1;
+    }
+    //prevslx = e.screenX;
+  }
 
+/*
   owl(){
 
 
@@ -71,3 +113,4 @@ export class CardComponent implements AfterViewInit{
 
 
   }
+*/

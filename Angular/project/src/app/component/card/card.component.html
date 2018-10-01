@@ -1,12 +1,33 @@
-<section id="slider">
+<div style="">
+<div style="
+">
+<br>
+<br>
+<br>
+<br>
+<br>
+    <section id="slider">
   <input type="radio" name="slider" id="s1">
   <input type="radio" name="slider" id="s2">
   <input type="radio" name="slider" id="s3" checked>
   <input type="radio" name="slider" id="s4">
   <input type="radio" name="slider" id="s5">
-  <label for="s1" id="slide1"></label>
-  <label for="s2" id="slide2"></label>
-  <label for="s3" id="slide3"></label>
-  <label for="s4" id="slide4"></label>
-  <label for="s5" id="slide5"></label>
+  <label for="s1" id="slide1" style="
+    background-image: url('../../../assets/Card_page/Electrical front.png');
+    background-size: 100% 100%; 
+    "></label>
+  <label for="s2" id="slide2" style="background-image: url('../../../assets/Card_page/emotional front.png');
+  background-size: 100% 100%; "></label>
+  <label for="s3" id="slide3" style="background-image: url('../../../assets/Card_page/law front.png');
+  background-size: 100% 100%; "></label>
+  <label for="s4" id="slide4" style="background-image: url('../../../assets/Card_page/product design.png');
+  background-size: 100% 100%; "></label>
+  <label for="s5" id="slide5" style="background-image: url('../../../assets/Card_page/social front.png');
+  background-size: 100% 100%; "></label>
 </section>
+<div style="align-content: center;">
+    <button (click)="slide(-1)" style="display: inline-block;"><-</button>
+    <button (click)="slide(1)" style="display: inline-block;">-></button>
+</div>
+</div>
+</div>

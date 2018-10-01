@@ -4,7 +4,7 @@
 }
 
 body {
-  padding: 20px;
+  /*padding: 20px;*/
   background: #eee;
   user-select: none;
 }
@@ -21,6 +21,7 @@ body {
 }
 
 #slider label {
+  background-color: 100% 100%;
   margin: auto;
   width: 60%;
   height: 100%;
