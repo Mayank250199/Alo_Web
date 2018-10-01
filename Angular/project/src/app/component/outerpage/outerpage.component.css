@@ -4,3 +4,87 @@
     padding:0;
     margin:0;
 }
+
+html {
+    background: #95818D;
+    position: relative;
+    min-height: 100vh;
+    display: block;
+    position: relative;
+  }
+  
+  h4 {
+    margin-top: 0;
+  }
+  
+  #mainNavigation {
+    width: 100px;
+    min-height: 100vh;
+    background: #122932;
+    position: fixed;
+    z-index:11;
+    color: white;
+    padding: 1.5rem;
+    font-weight: normal;
+    line-height: 2rem;
+  }
+  
+  #siteWrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 100%;
+    min-height: 100vh;
+  }
+  
+  #appWrapper {
+    display: block;
+    width: calc(100% - 208px);
+    flex: 1;
+    height: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:10px;
+  }
+  
+  #mainNavigation .leftylink {
+    transform: rotate(90deg);
+    position: fixed;
+     top: 50%;
+    color: #fff;
+    font-family: SofiaPro-bold;
+    font-weight: normal;
+}
+
+#bodySidebar .leftylink1 {
+    transform: rotate(90deg);
+    position: fixed;
+     top: 50%;
+    margin-right:90%; 
+
+    font-family: SofiaPro-bold;
+    font-weight: normal;
+}
+  #appInnerWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  #bodyContent {
+    width: 108%;
+    max-width: 110%;
+    height: 100%;
+    min-height: 100vh;
+    background: #122932;
+  }
+  
+  #bodySidebar{
+    background: #122932;
+  }
