@@ -1,0 +1,54 @@
+
+  .sidenavleft {
+    height: 100%;
+    width: 70px;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    background-color: #273040;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenavleft a {
+    transform: rotate(90deg);
+    position: fixed;
+     top: 50%;
+    color: #fff;
+    font-family: SofiaPro-bold;
+    font-weight: normal;
+}
+
+.sidenavright {
+    height: 100%;
+    width: 70px;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    right: 0;
+    background-color: #273040;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenavright a {
+    transform: rotate(-90deg);
+    position: fixed;
+     top: 50%;
+    color: #fff;
+    font-family: SofiaPro-bold;
+    font-weight: normal;
+}
+
+.main {
+    margin-left: 60px;
+    margin-right: 60px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
