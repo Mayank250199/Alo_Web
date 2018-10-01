@@ -1,4 +1,9 @@
-
+.f23{
+  font-size: 21px;
+}
+.count{
+  font-size: 40px;
+}
 body{
   color: #00ecf1 !important;
 }
