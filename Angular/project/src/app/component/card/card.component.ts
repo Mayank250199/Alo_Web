@@ -45,7 +45,7 @@ function slide(dir){
     if(curr==6) curr=1;
     else if(curr == 0) curr = 5;
     
-    document.getElementById('s'+curr).checked = true;
+    $('#s'+curr).prop('checked', true);
 }
 function onSlide(e){
     //console.log(prevslx);
