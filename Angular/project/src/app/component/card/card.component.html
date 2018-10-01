@@ -7,11 +7,12 @@
   <input type="radio" name="slider" id="s3" checked>
   <input type="radio" name="slider" id="s4">
   <input type="radio" name="slider" id="s5">
-  <label for="s1" id="slide1" style="
-    background-image: url('../../../assets/card_page/Electricalfront.png');
-    background-size: 100% 100%;
-    "></label>
-  <label for="s2" id="slide2" style="background-image: url('../../../assets/card_page/Electricalfront.png');
+  <label for="s1" id="slide1" style="background-image: url('../../../assets/card_page/Electricalfront.png'); 
+  background-size: 100% 100%;">
+  <label id="back1" style="background-image: url('../../../assets/card_page/socialfront.png');
+  background-size: 100% 100%; "></label>
+</label>
+  <label for="s2" id="slide2" style="background-image: url('../../../assets/card_page/emotionalfront.png');
   background-size: 100% 100%; "></label>
   <label for="s3" id="slide3" style="background-image: url('../../../assets/card_page/lawfront.png');
   background-size: 100% 100%; "></label>
@@ -20,6 +21,7 @@
   <label for="s5" id="slide5" style="background-image: url('../../../assets/card_page/socialfront.png');
   background-size: 100% 100%; "></label>
 </section>
+
 <div style="float: center;left:50%;text-align:center;margin-top:100px;">
   <button class="primary" (click)="slide(-1)" style="display: inline-block;padding:5px;background-color:cyan;color:#1c2331;border:none;border-radius:2px;">Prev</button>&nbsp;&nbsp;
   <button class="primary" (click)="slide(1)" style="display: inline-block;padding:5px;background-color:cyan;color:#1c2331;border:none;border-radius:2px;">Next</button>
