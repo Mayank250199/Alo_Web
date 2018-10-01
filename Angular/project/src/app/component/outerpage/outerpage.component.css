@@ -35,6 +35,7 @@ html {
     flex-direction: row;
     height: 100%;
     min-height: 100vh;
+    background: #122932
   }
   
   #appWrapper {
@@ -64,7 +65,7 @@ html {
     position: fixed;
      top: 50%;
     margin-right:90%; 
-
+    color:white;
     font-family: SofiaPro-bold;
     font-weight: normal;
 }
@@ -86,5 +87,5 @@ html {
   }
   
   #bodySidebar{
-    background: #122932;
+    background: #122932 !important;
   }
