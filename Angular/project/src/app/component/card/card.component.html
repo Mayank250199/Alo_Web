@@ -1,11 +1,7 @@
 <div style="">
 <div style="
 ">
-<br>
-<br>
-<br>
-<br>
-<br>
+<br><br>
     <section id="slider">
   <input type="radio" name="slider" id="s1">
   <input type="radio" name="slider" id="s2">
@@ -13,21 +9,21 @@
   <input type="radio" name="slider" id="s4">
   <input type="radio" name="slider" id="s5">
   <label for="s1" id="slide1" style="
-    background-image: url('../../../assets/Card_page/Electrical front.png');
-    background-size: 100% 100%; 
+    background-image: url('Electricalfront.png');
+    background-size: 100% 100%;
     "></label>
-  <label for="s2" id="slide2" style="background-image: url('../../../assets/Card_page/emotional front.png');
+  <label for="s2" id="slide2" style="background-image: url('emotionalfront.png');
   background-size: 100% 100%; "></label>
-  <label for="s3" id="slide3" style="background-image: url('../../../assets/Card_page/law front.png');
+  <label for="s3" id="slide3" style="background-image: url('lawfront.png');
   background-size: 100% 100%; "></label>
-  <label for="s4" id="slide4" style="background-image: url('../../../assets/Card_page/product design.png');
+  <label for="s4" id="slide4" style="background-image: url('productdesign.png');
   background-size: 100% 100%; "></label>
-  <label for="s5" id="slide5" style="background-image: url('../../../assets/Card_page/social front.png');
+  <label for="s5" id="slide5" style="background-image: url('socialfront.png');
   background-size: 100% 100%; "></label>
 </section>
-<div style="align-content: center;">
-    <button (click)="slide(-1)" style="display: inline-block;"><-</button>
-    <button (click)="slide(1)" style="display: inline-block;">-></button>
+<div style="float:center;text-align:center;margin-top:140px;">
+    <button class="primary" (click)="slide(-1)" style="display: inline-block;padding:5px;background-color:cyan;color:#1c2331;border:none;border-radius:2px;">Prev</button>&nbsp;&nbsp;
+    <button class="primary" (click)="slide(1)" style="display: inline-block;padding:5px;background-color:cyan;color:#1c2331;border:none;border-radius:2px;">Next</button>
 </div>
 </div>
 </div>

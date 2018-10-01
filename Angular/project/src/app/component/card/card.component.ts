@@ -26,7 +26,7 @@ export class CardComponent implements AfterViewInit{
     document.getElementById('slider').ondrag = onSlide;
 
   }
-  
+
 
   slides = [
     '../../../assets/Card_page/Electrical front.png',
@@ -44,7 +44,7 @@ function slide(dir){
     curr += dir;
     if(curr==6) curr=1;
     else if(curr == 0) curr = 5;
-    
+
     $('#s'+curr).prop('checked', true);
 }
 function onSlide(e){
@@ -52,7 +52,7 @@ function onSlide(e){
     if(e.screenX == 0) {
         //prevslx=0;
        slide(direction);
-        
+
         return;
     }
     if(prevslx-e.screenX > 0){
