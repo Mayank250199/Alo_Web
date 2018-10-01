@@ -7,9 +7,73 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamPageComponent implements OnInit {
 
+  team_members=[
+    {
+      name:'Anoosh Kotak',
+      pic_name: 'Anuj_Chopra.jpg',
+      position:'VP of Product Visa',
+      details: 'This is the tribune to tailava, I love my PC, bla bla bla, thats it'
+    },
+    {
+      name:'Anoosh Kotak',
+      pic_name: 'Anuj_Chopra.jpg',
+      position:'VP of Product Visa',
+      details: 'This is the tribune to tailava, I love my PC, bla bla bla, thats it'
+    },
+    {
+      name:'Anoosh Kotak',
+      pic_name: 'Anuj_Chopra.jpg',
+      position:'VP of Product Visa',
+      details: 'This is the tribune to tailava, I love my PC, bla bla bla, thats it'
+    },
+    {
+      name:'Anoosh Kotak',
+      pic_name: 'Anuj_Chopra.jpg',
+      position:'VP of Product Visa',
+      details: 'This is the tribune to tailava, I love my PC, bla bla bla, thats it'
+    },
+    {
+      name:'Anoosh Kotak',
+      pic_name: 'Anuj_Chopra.jpg',
+      position:'VP of Product Visa',
+      details: 'This is the tribune to tailava, I love my PC, bla bla bla, thats it'
+    },
+    {
+      name:'Anoosh Kotak',
+      pic_name: 'Anuj_Chopra.jpg',
+      position:'VP of Product Visa',
+      details: 'This is the tribune to tailava, I love my PC, bla bla bla, thats it'
+    },
+    {
+      name:'Anoosh Kotak',
+      pic_name: 'Anuj_Chopra.jpg',
+      position:'VP of Product Visa',
+      details: 'This is the tribune to tailava, I love my PC, bla bla bla, thats it'
+    },
+    {
+      name:'Anoosh Kotak',
+      pic_name: 'Anuj_Chopra.jpg',
+      position:'VP of Product Visa',
+      details: 'This is the tribune to tailava, I love my PC, bla bla bla, thats it'
+    },
+    {
+      name:'Anoosh Kotak',
+      pic_name: 'Anuj_Chopra.jpg',
+      position:'VP of Product Visa',
+      details: 'This is the tribune to tailava, I love my PC, bla bla bla, thats it'
+    },
+    {
+      name:'Anoosh Kotak',
+      pic_name: 'Anuj_Chopra.jpg',
+      position:'VP of Product Visa',
+      details: 'This is the tribune to tailava, I love my PC, bla bla bla, thats it'
+    }
+  ]
   constructor() { }
 
   ngOnInit() {
+    //console.log(this.team_members)
   }
+
 
 }
