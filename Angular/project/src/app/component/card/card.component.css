@@ -5,6 +5,7 @@
 .carnav{
 display: inline-block;
 padding:5px;
+font-size: 15px;
 background-color:cyan;
 color:#1c2331;
 border:none;
@@ -14,7 +15,7 @@ border-radius:2px;
   float: center;
   left:50%;
   text-align:center;
-  margin-top:160px;
+  margin-top:10px;
 }
 body {
   /*padding: 20px;*/
