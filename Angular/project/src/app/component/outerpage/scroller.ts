@@ -40,6 +40,7 @@ export class Scroller{
                 if((curr_sec_pos-prev_sec_pos)<0){ 
                     this.scroll_to(this.sections_length[curr_sec_pos]-window.innerHeight);
                     //console.log(curr_sec_pos, prev_sec_pos);   
+                    disableScroll();
                 }
 
                 // else no transaction required
@@ -48,9 +49,12 @@ export class Scroller{
             var curr_sec_pos = this.get_position(this.out_element.scrollTop+window.innerHeight),
                 prev_sec_pos = this.get_position(this.last_top_position+window.innerHeight);
                 // transection occur if curr-prev>0
-                if((curr_sec_pos-prev_sec_pos)>0) 
+                if((curr_sec_pos-prev_sec_pos)>0){
                     this.scroll_to(this.sections_length[curr_sec_pos-1]);
+                    disableScroll();
+                }
                 // else no transaction required
+                
         }
         this.last_top_position = this.out_element.scrollTop;
     }
@@ -73,7 +77,10 @@ function scrollTo(element, to, duration) {
         if(currentTime < duration) {
             setTimeout(animateScroll, increment);
         }
-        else scrolling = false;
+        else {
+            scrolling = false;
+            enableScroll();
+        }
     };
     animateScroll();
 }
@@ -88,3 +95,38 @@ function easeInOutQuad(t, b, c, d) {
 	t--;
 	return -c/2 * (t*(t-2) - 1) + b;
 };
+
+/** Faltu ka code */
+var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+function preventDefault(e) {
+  e = e || window.event;
+  if (e.preventDefault)
+      e.preventDefault();
+  e.returnValue = false;  
+}
+
+function preventDefaultForScrollKeys(e) {
+    if (keys[e.keyCode]) {
+        preventDefault(e);
+        return false;
+    }
+}
+
+function disableScroll() {
+  if (window.addEventListener) // older FF
+      window.addEventListener('DOMMouseScroll', preventDefault, false);
+  window.onwheel = preventDefault; // modern standard
+  window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+  window.ontouchmove  = preventDefault; // mobile
+  document.onkeydown  = preventDefaultForScrollKeys;
+}
+
+function enableScroll() {
+    if (window.removeEventListener)
+        window.removeEventListener('DOMMouseScroll', preventDefault, false);
+    window.onmousewheel = document.onmousewheel = null; 
+    window.onwheel = null; 
+    window.ontouchmove = null;  
+    document.onkeydown = null;  
+}
