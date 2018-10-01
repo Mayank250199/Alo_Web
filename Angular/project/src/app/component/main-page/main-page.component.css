@@ -1,5 +1,8 @@
 .f23{
-  font-size: 21px;
+  font-size: 19px;
+}
+.mainhead{
+  font-size: 42px;
 }
 .count{
   font-size: 40px;
@@ -8,7 +11,7 @@ body{
   color: #00ecf1 !important;
 }
 .bg1{
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available; */
     overflow: hidden;
     background-image: url('../../../assets/main_page/banner.png');
     background-size: 100% 100%;
@@ -21,4 +24,77 @@ body{
 }
 .about strong{
     color: #00ecf1 !important;
+}
+@media only screen and (min-width: 900px) and (max-width: 1280px) {
+  .f23{
+    font-size: 17px;
+  }
+  .mainhead{
+    margin-top: 70px;
+    font-size: 30px;
+  }
+  .count{
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 952px) and (max-width: 992px) {
+  .f23{
+    font-size: 17px;
+  }
+  .mainhead{
+    margin-top: 50px;
+    font-size: 30px;
+  }
+  .count{
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 955px) {
+  .f23{
+    font-size: 15px;
+  }
+  .mainhead{
+    margin-top: 50px;
+    font-size: 30px;
+  }
+  .count{
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 699px) {
+  .f23{
+    font-size: 13px;
+  }
+  .mainhead{
+    margin-top: 50px;
+    font-size: 25px;
+  }
+  .count{
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 499px) and (max-width: 599px) {
+  .f23{
+    font-size: 13px;
+  }
+  .mainhead{
+    margin-top: 100px;
+    font-size: 20px;
+  }
+  .count{
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 299px) and (max-width: 598px) {
+  .f23{
+    font-size: 12px;
+  }
+  .mainhead{
+    margin-top: 100px;
+    font-size: 15px;
+  }
+  .count{
+    font-size: 13px;
+  }
 }
