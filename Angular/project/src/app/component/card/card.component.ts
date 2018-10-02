@@ -2,7 +2,7 @@ import { Component, AfterViewInit} from '@angular/core';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
 import * as $ from 'jquery';
-import './jquery.flip.min.js';
+import '../../../assets/card_page/js/jquery.flip.min.js';
 declare var $:any;
 @Component({
   selector: 'app-card',
