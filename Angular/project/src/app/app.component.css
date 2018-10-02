@@ -198,7 +198,7 @@ h1 {
   background:#031129;
   right: -55%;
   top: 0;
-  width: 50%;
+  width: 55%;
   height: 100%;
   position: absolute;
   transition: all .35s ease;
@@ -212,7 +212,7 @@ h1 {
   left: 0;
 }
 .overlay.open:after {
-  right: 0;
+  right: -1px;
 }
 .overlay.open li {
   -webkit-animation: fadeInRight .5s ease forwards;
