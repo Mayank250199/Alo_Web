@@ -2,7 +2,7 @@ import { Component, AfterViewInit} from '@angular/core';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
 import * as $ from 'jquery';
-import './jquery.flip.min.js';
+import '../../../assets/card_page/js/jquery.flip.min.js';
 declare var $:any;
 @Component({
   selector: 'app-card',
@@ -30,7 +30,7 @@ export class CardComponent implements AfterViewInit{
 
 
   slides = [
-    {image_front:'../../../assets/card_page/Electricalfront.png',image_back:'../../../assets/card_page/Electrical.png'},
+    {image_front:'../../../assets/card_page/Electricalfront.png',image_back:'../../../assets/card_page/electrical.png'},
     {image_front:'../../../assets/card_page/emotionalfront.png', image_back:'../../../assets/card_page/emotional.png'},
     {image_front:'../../../assets/card_page/lawfront.png',image_back:'../../../assets/card_page/law.png'},
     {image_front:'../../../assets/card_page/productdesign.png',image_back:'../../../assets/card_page/product.png'},
