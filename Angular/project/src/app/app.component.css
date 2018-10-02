@@ -20,6 +20,16 @@
     font-weight: normal;
 }
 
+.lega {
+    transform: rotate(90deg);
+    position: fixed;
+     bottom:1%;
+     margin-left: -250px;;
+    color: grey;
+    font-size: 14px;
+    font-family: SofiaPro-bold;
+    font-weight: normal;
+}
 .sidenavright {
     height: 100%;
     width: 70px;
