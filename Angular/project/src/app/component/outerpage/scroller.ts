@@ -6,6 +6,7 @@ export class Scroller{
         this.out_element.addEventListener('scroll', ()=>this.onScroll());
     }
     adjust(){
+        this.last_top_position = this.out_element.scrollTop;
         this.out_element.style.height = window.innerHeight+'px';
         var sections=this.out_element.children;
         var tmplength=0;
@@ -17,7 +18,7 @@ export class Scroller{
         console.log(this.sections_length);
     }
     last_top_position;
-    get_position(val){
+    get_position(val, direction=1){
         var pos=0, minh=this.sections_length[0];
         for (let i = 0; i < this.sections_length.length; i++) {
             if(val<this.sections_length[i]) break;
@@ -38,9 +39,10 @@ export class Scroller{
                 prev_sec_pos = this.get_position(this.last_top_position);
                 // transection occur if curr-prev<0
                 if((curr_sec_pos-prev_sec_pos)<0){ 
+                    disableScroll();
                     this.scroll_to(this.sections_length[curr_sec_pos]-window.innerHeight);
                     //console.log(curr_sec_pos, prev_sec_pos);   
-                    disableScroll();
+                    
                 }
 
                 // else no transaction required
@@ -50,8 +52,9 @@ export class Scroller{
                 prev_sec_pos = this.get_position(this.last_top_position+window.innerHeight);
                 // transection occur if curr-prev>0
                 if((curr_sec_pos-prev_sec_pos)>0){
-                    this.scroll_to(this.sections_length[curr_sec_pos-1]);
                     disableScroll();
+                    this.scroll_to(this.sections_length[curr_sec_pos-1]);
+                    
                 }
                 // else no transaction required
                 
@@ -79,7 +82,7 @@ function scrollTo(element, to, duration) {
         }
         else {
             scrolling = false;
-            enableScroll();
+            setTimeout(()=>{enableScroll();}, 500);
         }
     };
     animateScroll();
