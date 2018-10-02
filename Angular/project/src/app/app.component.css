@@ -48,9 +48,24 @@
     padding: 0px 10px;
 }
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
+/* @media screen and (max-height: 750px) {
+    .sidenavright {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+} */
+
+@media screen and (max-width: 500px) {
+    .sidenavright {
+        display: none;
+    }
+    .sidenavleft {
+        display: none;
+    }
+    .main {
+        margin-left: 0px;
+        margin-right: -10px; /* Same as the width of the sidenav */
+        font-size: 28px; /* Increased text to enable scrolling */
+        /* padding: 0px 10px; */
+    }
 }
 body {
   background: #F5F5F5;
@@ -59,7 +74,7 @@ body {
 .container {
   position: absolute;
   width: 100%;
-  heigh: 100%;
+  height: 100%;
   text-align: center;
   top: 40%;
   left: 0;
