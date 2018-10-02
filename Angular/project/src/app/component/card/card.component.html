@@ -9,7 +9,7 @@
   <input type="radio" name="slider" id="s3" checked>
   <input type="radio" name="slider" id="s4">
   <input type="radio" name="slider" id="s5">
-  <div class="text-center"*ngFor="let slide of slides; let i = index" 
+  <div class="text-center"*ngFor="let slide of slides; let i = index"
     [attr.for]="'s'+(i+1)"
     id="slide{{i+1}}"
     (mouseenter)="flip(i)"
@@ -26,7 +26,7 @@
   </div>
 
 </section><br>
-<p class="text-center" style="color:#fff;font-size:21px;">Interested in what we do? <br /><a href="" style="color:cyan;font-size:23px;">Learn more></a></p>
+<p class="text-center carnav1"style="color:#fff;font-size:21px;">Interested in what we do? <br /><a href="" style="color:cyan;font-size:23px;">Learn more></a></p>
 <div class="cnav">
   <button class="primary carnav" (click)="slide(-1)">Prev</button>&nbsp;&nbsp;
   <button class="primary carnav" (click)="slide(1)">Next</button>

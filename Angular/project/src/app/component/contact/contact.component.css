@@ -1,11 +1,12 @@
 body {
     background-color: #273040;
 }
+
 .conatiner {
     background-color: lightgrey;
     width: 300px;
     border: 25px solid green;
-    padding: 25px;
+    padding: 20px;
     margin: 25px;
 }
 .box{
@@ -74,7 +75,7 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     pointer-events: none;
 }
 
-.styled-input.wide { 
+.styled-input.wide {
     width: 650px;
     max-width: 100%;
 }
@@ -143,7 +144,7 @@ textarea {
 input[type=checkbox] + label {
   color: #ccc;
   font-style: italic;
-} 
+}
 
 input[type=checkbox]:checked + label {
   color: #f00;

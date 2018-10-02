@@ -11,6 +11,11 @@ color:#1c2331;
 border:none;
 border-radius:2px;
 }
+.carnav1{
+padding:5px;
+font-size: 15px;
+color:#fff;
+}
 .cnav{
   float: center;
   left:50%;
@@ -130,7 +135,7 @@ body {
   #slider label {
   width: 100%;
   }
-  .cnav{
+  .carnav1{
     margin-top:350px;
   }
   #s1:checked ~ #slide4, #s2:checked ~ #slide5,
@@ -172,7 +177,7 @@ body {
   #slider label {
   width: 60%;
   }
-  .cnav{
+  .carnav1{
     margin-top:250px;
   }
   #s1:checked ~ #slide4, #s2:checked ~ #slide5,
@@ -216,7 +221,7 @@ body {
   #slider label {
   width: 50%;
   }
-  .cnav{
+  .carnav1{
     margin-top:130px;
   }
   #s1:checked ~ #slide4, #s2:checked ~ #slide5,
