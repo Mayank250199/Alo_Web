@@ -9,11 +9,13 @@ import { CardComponent } from './component/card/card.component';
 import { PanoramaComponent } from './component/panorama/panorama.component';
 import {RouterModule, Routes} from '@angular/router';
 import { OuterpageComponent } from './component/outerpage/outerpage.component';
+import { ContactComponent } from './component/contact/contact.component';
 //fullpage
 //import { MnFullpageModule } from 'ngx-fullpage';
 //import { MnFullpageDirective, MnFullpageService } from "ngx-fullpage";
 const appRouts=[
   {path: 'team-page', component: TeamPageComponent, },
+  {path: 'contact-page', component: ContactComponent, },
   {path: 'home', component: OuterpageComponent, pathMatch: 'full'},
   {path:'', pathMatch:'full', redirectTo:'/home'}
 ]
@@ -27,6 +29,7 @@ const appRouts=[
     CardComponent,
     PanoramaComponent,
     OuterpageComponent,
+    ContactComponent,
   ],
   imports: [
     RouterModule.forRoot(appRouts, {enableTracing:true}),
