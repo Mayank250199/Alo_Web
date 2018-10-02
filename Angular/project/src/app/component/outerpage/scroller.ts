@@ -4,6 +4,7 @@ export class Scroller{
         // getting the height of screen, and setting it to outelement's property
         this.adjust();
         this.out_element.addEventListener('scroll', ()=>this.onScroll());
+        window.onresize = this.adjust;
     }
     adjust(){
         this.last_top_position = this.out_element.scrollTop;

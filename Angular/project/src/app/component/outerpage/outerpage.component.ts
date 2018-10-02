@@ -14,8 +14,8 @@ export class OuterpageComponent implements OnInit {
   scroller;
   ngAfterViewInit(){
     this.scroller= new Scroller(document.getElementById('mfullpage'));
-    console.clear();
-    console.log(this.scroller);
+    //console.clear();
+    //console.log(this.scroller);
   }
 
 }
