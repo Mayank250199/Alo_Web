@@ -2,7 +2,7 @@ import { Component, AfterViewInit} from '@angular/core';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
 import * as $ from 'jquery';
-
+import './jquery.flip.min.js';
 declare var $:any;
 @Component({
   selector: 'app-card',
@@ -24,19 +24,28 @@ export class CardComponent implements AfterViewInit{
         //console.log('start');
     };
     document.getElementById('slider').ondrag = onSlide;
+    flipinit();
 
   }
 
 
   slides = [
-    '../../../assets/Card_page/Electrical front.png',
-    '../../../assets/Card_page/emotional front.png',
-    '../../../assets/Card_page/law front.png',
-    '../../../assets/Card_page/product design.png',
-    '../../../assets/Card_page/social front.png'
+    {image_front:'../../../assets/card_page/Electricalfront.png',image_back:'../../../assets/card_page/Electrical.png'},
+    {image_front:'../../../assets/card_page/emotionalfront.png', image_back:'../../../assets/card_page/emotional.png'},
+    {image_front:'../../../assets/card_page/lawfront.png',image_back:'../../../assets/card_page/law.png'},
+    {image_front:'../../../assets/card_page/productdesign.png',image_back:'../../../assets/card_page/product.png'},
+    {image_front:'../../../assets/card_page/socialfront.png',image_back:'../../../assets/card_page/social.png'},
   ];
   slide(dir){
       slide(dir);
+  }
+  flip(no){
+      divflip(no+1);
+      console.log(no);
+  }
+  unflip(no){
+      divunflip(no+1);
+      console.log(no);
   }
 }
 var prevslx=0, direction=0, curr=3;
@@ -47,6 +56,7 @@ function slide(dir){
 
     $('#s'+curr).prop('checked', true);
 }
+
 function onSlide(e){
     //console.log(prevslx);
     if(e.screenX == 0) {
@@ -65,6 +75,22 @@ function onSlide(e){
     }
     //prevslx = e.screenX;
   }
+
+ function flipinit(){
+    for(var i=1;i<=5;i++){
+        $('#slide_flip'+i).flip();
+    }
+}
+ function divflip(no){
+    if($('#s'+no).prop('checked')==true){
+        // this is the current element
+        $('#slide_flip'+no).flip(true);
+    }
+ }
+ function divunflip(no){
+    $('#slide_flip'+no).flip(false);
+ }
+ 
 
 /*
   owl(){
