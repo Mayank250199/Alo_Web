@@ -13,7 +13,7 @@
     padding-top: 20px;
 }
 
-.sidenavleft a {
+.sidenavleft #a {
     transform: rotate(90deg);
     position: fixed;
      top: 50%;
