@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Scroller} from './scroller';
+declare var $:any;
 @Component({
   selector: 'app-outerpage',
   templateUrl: './outerpage.component.html',
@@ -13,9 +13,11 @@ export class OuterpageComponent implements OnInit {
   }
   scroller;
   ngAfterViewInit(){
-    this.scroller= new Scroller(document.getElementById('mfullpage'));
-    //console.clear();
-    //console.log(this.scroller);
+    $('#mfullpage').fullpage({
+      licenseKey:'OPEN-SOURCE-GPLV3-LICENSE',
+      sectionsColor: ['#4A6FB1', '#939FAA', '#323539'],
+      scrollOverflow:true
+    })
   }
 
 }

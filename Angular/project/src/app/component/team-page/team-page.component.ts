@@ -105,7 +105,8 @@ export class TeamPageComponent implements OnInit {
     {
       name:'Yash Bhatnagar',
       pic_name: 'Yash_Bathnagar.png',
-      position:'Experience Designer'
+      position:'Experience Designer',
+      details: 'This is the tribune to tailava, I love my PC, bla bla bla, thats it'
     },
     {
       name:'Mayank Jha',
