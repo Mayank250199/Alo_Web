@@ -1,13 +1,5 @@
 (function($) {
-    
-  'use strict';
 
-
-  /**
-   * =====================================
-   * Function for windows height and width      
-   * =====================================
-   */
   function windowSize( el ) {
     var result = 0;
     if("height" == el)
