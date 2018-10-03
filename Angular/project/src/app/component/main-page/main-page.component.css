@@ -11,10 +11,15 @@ body{
   color: #00ecf1 !important;
 }
 .bg1{
-    /* height: -webkit-fill-available; */
-    overflow: hidden;
-    background-image: url('../../../assets/main_page/banner.png');
-    background-size: 100% 100%;
+  background-image: url('../../../assets/main_page/background.svg');
+  background-color: #212c3e;
+  height: -webkit-fill-available;
+  overflow: hidden;
+  background-size: 100% 100%;
+}
+.bg2{
+  background-image: url('../../../assets/main_page/background_layer2.png');
+  background-size: 100%;
 }
 .center{
     text-align: center;
