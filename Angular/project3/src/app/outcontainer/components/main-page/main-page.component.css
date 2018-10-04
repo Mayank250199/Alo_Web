@@ -1,8 +1,15 @@
+* {
+      line-height: 25px !important;
+  }
 .f23{
     font-size: 23px;
+    margin-top: 18px;
+
   }
   .mainhead{
+    margin-top: 130px;
     font-size: 42px;
+    color: #06b2bd !important;
   }
   .count{
     font-size: 40px;
@@ -28,13 +35,20 @@ background-image: center;
        overflow: hidden;
        height: 100%;
    
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .bg2{
+    background-image: url('../../../../assets/main_page/background_layer2.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
   .center{
       text-align: center;
   }
   .about{
       color: #06b2bd !important;
-      top:100%;
+      margin-left: 80px;
   }
   .about strong{
       color: #00ecf1 !important;
@@ -62,6 +76,10 @@ background-image: center;
     .count{
       font-size: 25px;
     }
+    .about{
+        margin-left: 0px;
+    }
+      *{line-height: 25px !important;}
   }
   @media only screen and (min-width: 700px) and (max-width: 955px) {
     .f23{
@@ -74,8 +92,12 @@ background-image: center;
     .count{
       font-size: 25px;
     }
+    .about{
+        margin-left: 0px;
+    }
+      *{line-height: 15px !important;}
   }
-  
+
   @media only screen and (min-width: 600px) and (max-width: 699px) {
     .f23{
       font-size: 13px;
@@ -87,23 +109,8 @@ background-image: center;
     .count{
       font-size: 20px;
     }
-    .bg1{
-      background-image: url('../../../../assets/main_page/background.svg') no-repeat;
-  
-    background-color: #212c3e;
-  
-   background-repeat: no-repeat;
-   background-size: cover;
-      overflow: hidden;
-  
-    }
-    .bg2{
-      background-image: url('../../../../assets/main_page/background_layer2.png');
-      background-repeat:no-repeat;
-      background-size:contain;
-      background-position:center;
-         height: 100%;
-     
+    .about{
+        margin-left: 0px;
     }
   }
   @media only screen and (min-width: 499px) and (max-width: 599px) {
@@ -117,27 +124,8 @@ background-image: center;
     .count{
       font-size: 15px;
     }
-    .bg1{
-      background-image: url('../../../../assets/main_page/background.svg') no-repeat;
-   /* Full height */
-   height: 100%; 
-
-   background-repeat:no-repeat;
-   background-size:contain;
-   background-position:center;
-      overflow: hidden;
-  
-    }
-    .bg2{
-      background-image: url('../../../../assets/main_page/background_layer2.png');
-      height: 100%; 
-
-      /* Center and scale the image nicely */
-      background-repeat:no-repeat;
-      background-size:contain;
-      background-position:center;
-         overflow: hidden;
-     
+    .about{
+        margin-left: 0px;
     }
   }
   @media only screen and (min-width: 299px) and (max-width: 598px) {
@@ -151,23 +139,7 @@ background-image: center;
     .count{
       font-size: 13px;
     }
-    .bg1{
-      background-image: url('../../../../assets/main_page/background.svg') no-repeat;
-  
-    background-color: #212c3e;
-  
-   background-repeat: no-repeat;
-   background-size: cover;
-      overflow: hidden;
-  
-    }
-    .bg2{
-      background-image: url('../../../../assets/main_page/background_layer2.png');
-      background-repeat:no-repeat;
-      background-size:contain;
-      background-position:center;
-         height: 100%;
-     
+    .about{
+        margin-left: 0px;
     }
   }
-  
