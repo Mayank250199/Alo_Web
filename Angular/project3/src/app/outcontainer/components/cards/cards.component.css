@@ -1,3 +1,12 @@
+.left{
+  margin-top: 15%;
+  position: absolute;
+}
+.right{
+  transform: rotate(180deg);
+  margin-top: 15%;
+  margin-left: 93%;
+}
 * {
   margin: 0;
   padding: 0;
@@ -133,7 +142,11 @@ body {
 
 @media only screen and (min-width: 299px) and (max-width: 499px) {
   #slider label {
-  width: 100%;
+  width: 80%;
+  }
+  .left{
+    top:30%;
+    margin-left: -10px;
   }
   .carnav1{
     margin-top:350px;

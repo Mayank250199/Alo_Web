@@ -14,14 +14,27 @@
   .count{
     font-size: 40px;
   }
+  
   body{
-    color: #00ecf1 !important;
+    background-color:  #212c3e !important;
   }
   .bg1{
-    background-image: url('../../../../assets/main_page/background.svg');
-    background-color: #212c3e;
-    height: -webkit-fill-available;
+    background-image: url('../../../../assets/main_page/background.svg') no-repeat;
+
+  background-color: #212c3e;
+background-image: center;
+ background-repeat: no-repeat;
+ background-size: cover;
     overflow: hidden;
+
+  }
+  .bg2{
+    background-image: url('../../../../assets/main_page/background_layer2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+       overflow: hidden;
+       height: 100%;
+   
     background-repeat: no-repeat;
     background-size: 100%;
   }
