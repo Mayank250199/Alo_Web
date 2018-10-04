@@ -7,25 +7,34 @@
   .count{
     font-size: 40px;
   }
+  
   body{
-    color: #00ecf1 !important;
+    background-color:  #212c3e !important;
   }
   .bg1{
-    background-image: url('../../../../assets/main_page/background.svg');
-    background-color: #212c3e;
-    height: -webkit-fill-available;
+    background-image: url('../../../../assets/main_page/background.svg') no-repeat;
+
+  background-color: #212c3e;
+background-image: center;
+ background-repeat: no-repeat;
+ background-size: cover;
     overflow: hidden;
-    background-size: 100% 100%;
+
   }
   .bg2{
     background-image: url('../../../../assets/main_page/background_layer2.png');
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+       overflow: hidden;
+       height: 100%;
+   
   }
   .center{
       text-align: center;
   }
   .about{
       color: #06b2bd !important;
+      top:100%;
   }
   .about strong{
       color: #00ecf1 !important;
@@ -78,6 +87,24 @@
     .count{
       font-size: 20px;
     }
+    .bg1{
+      background-image: url('../../../../assets/main_page/background.svg') no-repeat;
+  
+    background-color: #212c3e;
+  
+   background-repeat: no-repeat;
+   background-size: cover;
+      overflow: hidden;
+  
+    }
+    .bg2{
+      background-image: url('../../../../assets/main_page/background_layer2.png');
+      background-repeat:no-repeat;
+      background-size:contain;
+      background-position:center;
+         height: 100%;
+     
+    }
   }
   @media only screen and (min-width: 499px) and (max-width: 599px) {
     .f23{
@@ -90,6 +117,28 @@
     .count{
       font-size: 15px;
     }
+    .bg1{
+      background-image: url('../../../../assets/main_page/background.svg') no-repeat;
+   /* Full height */
+   height: 100%; 
+
+   background-repeat:no-repeat;
+   background-size:contain;
+   background-position:center;
+      overflow: hidden;
+  
+    }
+    .bg2{
+      background-image: url('../../../../assets/main_page/background_layer2.png');
+      height: 100%; 
+
+      /* Center and scale the image nicely */
+      background-repeat:no-repeat;
+      background-size:contain;
+      background-position:center;
+         overflow: hidden;
+     
+    }
   }
   @media only screen and (min-width: 299px) and (max-width: 598px) {
     .f23{
@@ -101,6 +150,24 @@
     }
     .count{
       font-size: 13px;
+    }
+    .bg1{
+      background-image: url('../../../../assets/main_page/background.svg') no-repeat;
+  
+    background-color: #212c3e;
+  
+   background-repeat: no-repeat;
+   background-size: cover;
+      overflow: hidden;
+  
+    }
+    .bg2{
+      background-image: url('../../../../assets/main_page/background_layer2.png');
+      background-repeat:no-repeat;
+      background-size:contain;
+      background-position:center;
+         height: 100%;
+     
     }
   }
   
