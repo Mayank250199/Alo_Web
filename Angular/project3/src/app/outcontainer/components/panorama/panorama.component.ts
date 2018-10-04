@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+declare var $:any;
 @Component({
   selector: 'app-panorama',
   templateUrl: './panorama.component.html',
@@ -10,10 +10,11 @@ export class PanoramaComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+      lol();
   }
 
 }
-$(function() {
+function lol() {
 
     var $panorama = $('.panorama');
 
@@ -35,4 +36,4 @@ $(function() {
         $panorama.css('background-position', percentage + '% 0');
 
     });
-});
+}
