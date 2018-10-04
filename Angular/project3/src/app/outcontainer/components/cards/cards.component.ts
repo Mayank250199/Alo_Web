@@ -1,7 +1,7 @@
 import { Component, AfterViewInit} from '@angular/core';
-import * as $ from 'jquery';
+
 import '../../../../assets/card_page/js/jquery.flip.min.js';
-declare var $:any;
+declare var $:any, jquery:any;
 @Component({
   selector: 'app-cards',
   templateUrl: './cards.component.html',
