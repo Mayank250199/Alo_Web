@@ -1,0 +1,98 @@
+
+        <!--Start: 5th Section
+            - OUR TEAM PAGE
+        ====================================-->
+              <!-- Start: Page Slider Area
+        ================================== -->
+        <section class="content-area">
+          <div class="container-fluid">
+              <div class="row">
+
+      <div class="section section-item combine-section hide-overlay overflow dark-background" style="width:100%;" id="team-section ">
+          <div class="inner-container team-member dark-background">
+              <div class="container">
+                  <div class="row section-separator sp-bottom">
+
+                      <!-- Start: Section Heading -->
+                      <div class="section-header col-sm-10 col-sm-offset-1">
+                          <div class="overflow">
+                              <div class="line-outer">
+                                  <div class="line wow"></div>
+                              </div>
+                          </div>
+                          <div class="overflow">
+                              <div class="section-heading-outer m-b-15">
+                                  <p class="sub-heading wow">OUR TEAM</p>
+                              </div>
+                          </div>
+                          <div class="overflow">
+                              <div class="section-heading-outer p-l-50 p-r-50">
+                                  <h2 class="section-heading wow">Our Amazing Team</h2>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- End: Section Heading -->
+
+                      <div class="clearfix"></div>
+
+                      <div class="col-sm-12 grid-item m-t-30">
+                            <div class="row">
+                                        <div class="col-md-4 col-sm-6 col-xs-12 each-item overflow text-center relative wow"
+                                            *ngFor="let member of team_members_top"
+                                            style="width: -webkit-fill-available;">
+                                            <div class="item-inner overflow absolute">
+                                                <div class="profile-outer center">
+                                                    <div class="profile-image">
+                                                        <img src="../../../assets/Team_page/images/team-members/{{ member.pic_name }}" alt="Team Member" class="">
+                                                    </div>
+                                                <div class="profile-content">
+                                                    <span class="name">{{ member.name }}</span>
+                                                    <span class="position">{{ member.position }}</span>
+                                                </div>
+                                            </div>
+                                            <div class="content-detail">
+                                                <p>{{ member.details }}</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                            </div>
+                            <br><br>
+                        <div class="row">
+                                <div class="col-md-3 col-sm-6 col-xs-12 each-item1 overflow text-center relative wow"
+                                    *ngFor="let member of team_members_rest"
+                                    style="width: -webkit-fill-available;">
+                                    <div class="item-inner overflow absolute">
+                                        <div class="profile-outer center">
+                                            <div class="profile-image">
+                                                <img src="../../../assets/Team_page/images/team-members/{{ member.pic_name }}" alt="Team Member" class="">
+                                            </div>
+                                        <div class="profile-content">
+                                            <span class="name">{{ member.name }}</span>
+                                            <span class="position">{{ member.position }}</span>
+                                        </div>
+                                    </div>
+                                    <div class="content-detail">
+                                        <p>{{ member.details }}</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                      </div> <!-- End: .col-xs-12 -->
+
+                  </div> <!-- End: .row -->
+              </div> <!-- End: .container -->
+          </div> <!-- End: .inner-container -->
+
+      </div>
+
+
+
+      </div>
+      </div>
+      </section>
+      <!--End: 5th Section
+          - OUR TEAM PAGE
+      ====================================-->
