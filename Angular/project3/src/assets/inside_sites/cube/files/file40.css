@@ -7290,7 +7290,7 @@ a.btn-svg, .btn-svg {
     padding: 0;
     width: 100%; }
   .is-isotope .bg-image {
-    width: 101%;
+    width: 100%;
     width: calc(100% + 2px); }
   .is-isotope img {
     display: block;

@@ -12,12 +12,11 @@ import {MainPageComponent} from './outcontainer/components/main-page/main-page.c
 import { Routes, RouterModule} from '@angular/router';
 
 const appRouts=[
-  //{path: 'team', component: TeamPageComponent, },
-  //{path: 'contact', component: ContactComponent, },
+  {path: 'team-page', component: TeamComponent},
+  {path: 'contact-page', component: ContactComponent, },
   {path: 'home', component: OutcontainerComponent, pathMatch: 'full'},
   {path:'', pathMatch:'full', redirectTo:'/home'}
 ]
-
 
 @NgModule({
   declarations: [

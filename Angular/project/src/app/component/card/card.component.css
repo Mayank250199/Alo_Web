@@ -69,28 +69,28 @@ body {
 
 #s1:checked:hover ~ #slide1{
   transform: rotateY(180deg);
-  background-image: url('../../../assets/card_page/electrical.png');
+  background-image: url('../../../assets/card_page/1.1.png');
   background-size: 100% 100%;
 }
 
 #s2:checked:hover ~ #slide2{
   transform: rotateY(180deg);
-  background: url('../../../assets/card_page/emotional.png');
+  background: url('../../../assets/card_page/2.2.png');
   background-size: 100% 100%;
 }
 #s3:checked:hover ~ #slide3{
   transform: rotateY(180deg);
-  background: url('../../../assets/card_page/law.png');
+  background: url('../../../assets/card_page/3.3.png');
   background-size: 100% 100%;
 }
 #s4:checked:hover ~ #slide4{
   transform: rotateY(180deg);
-  background: url('../../../assets/card_page/product.png');
+  background: url('../../../assets/card_page/4.1.png');
   background-size: 100% 100%;
 }
 #s5:checked:hover ~ #slide5{
   transform: rotateY(180deg);
-  background: url('../../../assets/card_page/social.png');
+  background: url('../../../assets/card_page/5.1.png');
   background-size: 100% 100%;
 }
 
