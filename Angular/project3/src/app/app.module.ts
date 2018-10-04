@@ -9,6 +9,15 @@ import { CardsComponent } from './outcontainer/components/cards/cards.component'
 import { TeamComponent } from './outcontainer/components/team/team.component';
 import { ContactComponent } from './outcontainer/components/contact/contact.component';
 import {MainPageComponent} from './outcontainer/components/main-page/main-page.component';
+import { Routes, RouterModule} from '@angular/router';
+
+const appRouts=[
+  //{path: 'team', component: TeamPageComponent, },
+  //{path: 'contact', component: ContactComponent, },
+  {path: 'home', component: OutcontainerComponent, pathMatch: 'full'},
+  {path:'', pathMatch:'full', redirectTo:'/home'}
+]
+
 
 @NgModule({
   declarations: [
@@ -22,6 +31,7 @@ import {MainPageComponent} from './outcontainer/components/main-page/main-page.c
     MainPageComponent
   ],
   imports: [
+    RouterModule.forRoot(appRouts, {enableTracing:false}),
     BrowserModule
   ],
   providers: [],
