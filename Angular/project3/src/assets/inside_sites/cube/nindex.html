@@ -665,14 +665,16 @@
 			var x = event.clientX, y = event.clientY,
     		elementMouseIsOver = document.elementFromPoint(x, y);
 			//console.log('lol', scroll, elementMouseIsOver,elementMouseIsOver.classList.contains('overlay-diamonds-w'));
-			if(!elementMouseIsOver.classList.contains('bg-image')) return;
-			else console.log('triggered');
+			//if(!elementMouseIsOver.classList.contains('bg-image')) return;
+			//	else console.log('triggered');
+			
 			var h_diff = document.scrollingElement.scrollHeight - window.innerHeight;
 			if(window['swiper']==undefined){
 				swiper = document.getElementsByClassName('swiper-container')[0].swiper;
 			}
 			if (h_diff < 10) {
 				// desktop mode
+				
 				if (swiper.activeIndex == 0) {
 					scroll_up_possible = true;
 					scroll_down_possible = false;
@@ -701,13 +703,36 @@
 				}
 
 			}
-			//console.log(scroll_up_possible, scroll_down_possible);
+			console.log(scroll_up_possible, scroll_down_possible);
 			update_parent(scroll_up_possible, scroll_down_possible, swiper);
 		}
 		document.scrollingElement.onwheel = change_listener;
 		document.getElementsByClassName('arrow-left')[0].onclick=change_listener;
 		document.getElementsByClassName('arrow-right')[0].onclick=change_listener;
 		//console.clear();
+		//swiper.disableMousewheelControl()
+
+		swiper_modifier={
+			// wait while swiper initialized
+			init:(self)=>{
+				if(document.getElementsByClassName('swiper-container')[0].swiper==undefined){
+					console.log('not loaded yet');
+					setTimeout(()=>{
+						self.init(self);
+					}, 500);
+				}else if(document.getElementsByClassName('swiper-container')[0].swiper.off){
+					console.log('not loaded yet');
+					setTimeout(()=>{
+						self.init(self);
+					}, 500);
+				}
+				else
+				{
+					swiper.container.off();
+				}
+			}
+		}
+		swiper_modifier.init(swiper_modifier);
 	</script>
 </body>
 
