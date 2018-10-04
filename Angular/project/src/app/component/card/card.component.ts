@@ -30,11 +30,11 @@ export class CardComponent implements AfterViewInit{
 
 
   slides = [
-    {image_front:'../../../assets/card_page/Electricalfront.png',image_back:'../../../assets/card_page/electrical.png'},
-    {image_front:'../../../assets/card_page/emotionalfront.png', image_back:'../../../assets/card_page/emotional.png'},
-    {image_front:'../../../assets/card_page/lawfront.png',image_back:'../../../assets/card_page/law.png'},
-    {image_front:'../../../assets/card_page/productdesign.png',image_back:'../../../assets/card_page/product.png'},
-    {image_front:'../../../assets/card_page/socialfront.png',image_back:'../../../assets/card_page/social.png'},
+    {image_front:'../../../assets/card_page/1.png',image_back:'../../../assets/card_page/1.1.png'},
+    {image_front:'../../../assets/card_page/2.png', image_back:'../../../assets/card_page/2.2.png'},
+    {image_front:'../../../assets/card_page/3.png',image_back:'../../../assets/card_page/3.3.png'},
+    {image_front:'../../../assets/card_page/4.png',image_back:'../../../assets/card_page/4.1.png'},
+    {image_front:'../../../assets/card_page/5.png',image_back:'../../../assets/card_page/5.1.png'},
   ];
   slide(dir){
       slide(dir);
