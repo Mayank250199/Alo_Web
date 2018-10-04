@@ -8,6 +8,7 @@ import { SolutionComponent } from './outcontainer/components/solution/solution.c
 import { CardsComponent } from './outcontainer/components/cards/cards.component';
 import { TeamComponent } from './outcontainer/components/team/team.component';
 import { ContactComponent } from './outcontainer/components/contact/contact.component';
+import {MainPageComponent} from './outcontainer/components/main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ContactComponent } from './outcontainer/components/contact/contact.comp
     SolutionComponent,
     CardsComponent,
     TeamComponent,
-    ContactComponent
+    ContactComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule
