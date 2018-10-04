@@ -90,7 +90,7 @@ function onSlide(e){
  function divunflip(no){
     $('#slide_flip'+no).flip(false);
  }
- 
+
 
 /*
   owl(){

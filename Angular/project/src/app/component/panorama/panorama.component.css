@@ -1,4 +1,6 @@
-
+#A:hover{
+  transform: scale3d(2,2,2);
+}
 .panorama {
   margin: 0 auto;
   cursor: grab;
