@@ -48,6 +48,7 @@ html.fp-enabled,
     vertical-align: middle;
     width: 100%;
     height: 100%;
+    background-color: #031129; 
 }
 .fp-slidesContainer {
     float: left;
@@ -221,6 +222,7 @@ html.fp-enabled,
 .fp-responsive .fp-auto-height-responsive .fp-slide,
 .fp-responsive .fp-auto-height-responsive .fp-tableCell {
     height: auto !important;
+    background-color:  #212c3e
 }
 
 /*Only display content to screen readers*/
