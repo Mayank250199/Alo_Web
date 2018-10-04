@@ -8,9 +8,11 @@
 }
 * {
     font-family: myFirstFont /*Replace with your custom font*/, sans-serif !important;
+      line-height: 25px !important;
     /*Add the !important to overwrite all elements*/
   }
   html, body {
       max-width: 100%;
       overflow-x: hidden;
+      line-height: 25px;
   }
