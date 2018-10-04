@@ -30,11 +30,11 @@ export class CardComponent implements AfterViewInit{
 
 
   slides = [
-    {image_front:'../../../assets/card_page/1.png',image_back:'../../../assets/card_page/1.1.png'},
-    {image_front:'../../../assets/card_page/2.png', image_back:'../../../assets/card_page/2.2.png'},
-    {image_front:'../../../assets/card_page/3.png',image_back:'../../../assets/card_page/3.3.png'},
-    {image_front:'../../../assets/card_page/4.png',image_back:'../../../assets/card_page/4.1.png'},
-    {image_front:'../../../assets/card_page/5.png',image_back:'../../../assets/card_page/5.1.png'},
+    {image_front:'../../../assets/card_page/1.png',image_back:'../../../assets/card_page/11.png'},
+    {image_front:'../../../assets/card_page/2.png', image_back:'../../../assets/card_page/22.png'},
+    {image_front:'../../../assets/card_page/3.png',image_back:'../../../assets/card_page/33.png'},
+    {image_front:'../../../assets/card_page/4.png',image_back:'../../../assets/card_page/41.png'},
+    {image_front:'../../../assets/card_page/5.png',image_back:'../../../assets/card_page/51.png'},
   ];
   slide(dir){
       slide(dir);
