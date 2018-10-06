@@ -1,21 +1,21 @@
-import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+//import * as $ from 'jquery';
 declare var $:any;
 @Component({
   selector: 'app-panorama',
   templateUrl: './panorama.component.html',
   styleUrls: ['./panorama.component.css']
 })
-export class PanoramaComponent implements OnInit {
+export class PanoramaComponent implements AfterViewInit {
 
   constructor() { }
 
-  ngOnInit() {
-      //lol();
+  ngAfterViewInit(){
+      lol();
   }
 
 }
-$(function() {
+function lol() {
 
     var $panorama = $('.panorama');
 
@@ -37,4 +37,4 @@ $(function() {
         $panorama.css('background-position', percentage + '% 0');
 
     });
-});
+}

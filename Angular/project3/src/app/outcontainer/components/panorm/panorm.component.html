@@ -1,0 +1,38 @@
+<div style="display: inline-block; position: relative; width: 100%; overflow: hidden;">
+         
+  <div style="position: fixed; width: 100%; overflow-x: scroll; overflow-y: hidden;top: 0; left: 0;">
+    <img src="../../../../assets/f1.png" style="height: 100%; height: -webkit-fill-available;" alt="" srcset=""
+      id="pan_img"
+      (mouseover)="lol"
+      >
+  </div>
+  <div style="position: fixed; left: 0; top: 0; background-color: rgba(0,0,0,0.1);height: 100%;"
+  (mouseenter)="left_in()"
+      (mouseleave)="left_out()"
+      id="left_sc_div"
+      
+    >
+      <span style="position: relative;
+      top: 10%;
+      transform: translateY(-50%);"
+      ><<</span>
+  </div>
+    <div style="position: fixed; right: 0; top: 0; background-color: rgba(0,0,0,0.1);height: 100%;"
+    (mouseenter)="right_in()"
+    (mouseleave)="right_out()"
+    id="right_sc_div"
+    
+      >
+        <span style="position: relative;
+        top: 10%;
+        transform: translateY(-50%);">>></span>
+  </div>
+</div>
+<div style="width:150px; height:150px; display:block; position:fixed;
+  background-color: white;
+  border-color: #555;
+  border-radius: 4px; 
+  " id="disp_box">
+  lorem 
+  <br><br>
+</div>

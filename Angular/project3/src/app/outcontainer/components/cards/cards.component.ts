@@ -45,6 +45,18 @@ export class CardsComponent implements AfterViewInit{
       divunflip(no+1);
       console.log(no);
   }
+  animating=false;
+  animate(val=0){
+    this.animating=true;
+    var self=this;
+    if(val==0) this.animating=false;
+    else{
+            var i=setInterval(()=>{
+            if(self.animating==false) clearInterval(i);
+            slide(val);
+        }, 1000);
+    }
+  }
 }
 var prevslx=0, direction=0, curr=3;
 function slide(dir){

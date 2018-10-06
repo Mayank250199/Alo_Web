@@ -10,6 +10,7 @@ import { TeamComponent } from './outcontainer/components/team/team.component';
 import { ContactComponent } from './outcontainer/components/contact/contact.component';
 import {MainPageComponent} from './outcontainer/components/main-page/main-page.component';
 import { Routes, RouterModule} from '@angular/router';
+import { PanormComponent } from './outcontainer/components/panorm/panorm.component';
 
 const appRouts=[
   {path: 'team-page', component: TeamComponent},
@@ -27,7 +28,8 @@ const appRouts=[
     CardsComponent,
     TeamComponent,
     ContactComponent,
-    MainPageComponent
+    MainPageComponent,
+    PanormComponent
   ],
   imports: [
     RouterModule.forRoot(appRouts, {enableTracing:false}),

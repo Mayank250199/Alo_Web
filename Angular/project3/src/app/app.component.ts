@@ -34,4 +34,9 @@ export class AppComponent {
       }
 
   }
+  scroll_click(){
+    if(window['full_page'].getActiveSection().index ==4){
+      window['full_page'].moveTo(1);
+    } else window['full_page'].moveSectionDown();
+  }
 }

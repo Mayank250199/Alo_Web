@@ -24,11 +24,11 @@
         </div>
      </div>
   </div>
-  <img class="arrow" (click)="slide(-1)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Double_angle_left_font_awesome.svg/512px-Double_angle_left_font_awesome.svg.png" width="50px;" class="left" alt="">
-  <img class="arrow" (click)="slide(1)"src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Double_angle_left_font_awesome.svg/512px-Double_angle_left_font_awesome.svg.png" width="50px;" class="right" alt="">
+  <img class="arrow" (mouseenter)="animate(-1)" (mouseleave)="animate(0)" (click)="slide(-1)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Double_angle_left_font_awesome.svg/512px-Double_angle_left_font_awesome.svg.png" width="50px;" class="left" alt="">
+  <img class="arrow" (mouseenter)="animate(1)" (mouseleave)="animate(0)" (click)="slide(1)"src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Double_angle_left_font_awesome.svg/512px-Double_angle_left_font_awesome.svg.png" width="50px;" class="right" alt="">
 
-</section><br>
-<p class="text-center carnav1"style="color:#fff;font-size:21px;">Interested in what we do? <br /><a href="" style="color:cyan;font-size:23px;">Learn more></a></p>
+</section>
+
 <div class="cnav">
 
   <!-- <button class="primary carnav" >Prev</button>&nbsp;&nbsp;
@@ -36,4 +36,4 @@
 </div>
 </div>
 </div>
-<br>
+<p class="text-center carnav1"style="color:#fff;font-size:21px; position: relative; bottom:-30px;">Interested in what we do? <br /><a href="" style="color:cyan;font-size:23px;">Learn more></a></p>

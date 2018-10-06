@@ -19,29 +19,17 @@
     background-color:  #212c3e !important;
   }
   .bg1{
-    background-image: url('../../../../assets/main_page/background.svg') no-repeat;
-
-  background-color: #212c3e;
-background-image: center;
- background-repeat: no-repeat;
- background-size: cover;
+    background-image: url('../../../../assets/main_page/cliffbg.png');
+    background-color: #212c3e;
+    background-size: 100% 100%;
     overflow: hidden;
-
+    height: -webkit-fill-available;
   }
   .bg2{
-    background-image: url('../../../../assets/main_page/background_layer2.png');
+   /* background-image: url('../../../../assets/main_page/background_layer2.png');
     background-repeat: no-repeat;
     background-size: cover;
-       overflow: hidden;
-       height: 100%;
-   
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-  .bg2{
-    background-image: url('../../../../assets/main_page/background_layer2.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-size: 100%;*/
   }
   .center{
       text-align: center;

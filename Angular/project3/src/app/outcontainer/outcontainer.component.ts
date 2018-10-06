@@ -23,16 +23,17 @@ export class OutcontainerComponent implements OnInit {
     window['full_page']=this.myFullPage;
     document.getElementById('cubeframe').style.height = window.innerHeight+'px';
     document.getElementById('cubeframe').onload=()=>{
-      document.getElementById('cubeframe')['contentWindow']['update_parent']=(up,dn,swp)=>{
-      if(up){
-        self.myFullPage.moveSectionUp();
-        if(swp!=undefined && swp.slideNext!=undefined)
-          setTimeout(()=>swp.slideNext(), 1100);
+      document.getElementById('cubeframe')['contentWindow']['update_parent']=(moveDown)=>{
+      console.log(moveDown);
+        if(!moveDown){
+        self.myFullPage.moveTo(3);
+
+
+
+        
       }
-      else if(dn){
-        self.myFullPage.moveSectionDown();
-        if(swp!=undefined && swp.slideNext!=undefined)
-          setTimeout(()=>swp.slidePrev(), 1100);
+      else {
+        self.myFullPage.moveTo(5);
       } 
     };
    }

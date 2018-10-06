@@ -26,7 +26,19 @@
 <div class="main">
  <router-outlet></router-outlet>
 </div>
-
+<div style="
+      position: fixed;  
+      right:30px;
+      bottom:30px;
+      background-image: url('../assets/mouse.png');
+      background-size: 100% 100%;
+      width: 100px;
+      height: 100px;
+      transform: translate(-50%);"
+      (click)="scroll_click()"
+      >
+  <!--img src="../assets/mouse.png" alt=""-->
+</div>
 <div class="sidenavright">
 <a href="/contact-page">Contact</a>
 </div><!--
