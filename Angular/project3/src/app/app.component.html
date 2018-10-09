@@ -1,8 +1,5 @@
-<div *ngIf="percentage<3">
-  loading: {{ percentage }}
-</div> 
- <div *ngIf="percentage==3">
-  <div class="button_container" id="toggle">
+<div style="height:100%; position:relative; top:0; left:0; right:0; bottom:0;">
+  <div class="button_container" id="toggle" style="position: absolute; right:15px; top:15px; width: 40px;">
     <span class="top"></span>
     <span class="middle"></span>
     <span class="bottom"></span>
@@ -11,37 +8,34 @@
   <div class="overlay" id="overlay">
     <nav class="overlay-menu">
       <ul>
-        <li ><a href="/" style="min-height: 60px; padding: 10px;">Home</a></li>
+        <li><a href="/home" style="min-height: 60px; padding: 10px;">Home</a></li>
         <li><a href="/team-page" style="min-height: 60px; padding: 10px;">Team</a></li>
         <li><a href="/contact-page" style="min-height:60px; padding: 10px;">Contact</a></li>
       </ul>
     </nav>
   </div>
-<div class="sidenavleft">
-<a id="a" href="/team-page">Team</a>
-<a href="/home"><img src="../../assets/Logo.png" width="67px"alt=""></a>
-<a id="a"class="lega" href="#">Copyright (c) 2018 Alo.</a>
-</div>
+  <div class="sidenavleft" style="position: absolute; left:0; top:0; height:100%; width:70px;">
+    <a id="a" style="position: absolute; right:0; left:0; top:50%; font-size: 20px;" href="/team-page">Team</a>
+    <a href="/home"><img src="../../assets/Logo.png" width="67px" alt=""></a>
+  </div>
 
-<div class="main">
- <router-outlet></router-outlet>
-</div>
-<div style="
+  <div class="main" style="position: absolute; left:0; right:0; height:100%;">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="sidenavright" style="position: absolute; right:0; top:0; height:100%; width:70px; z-index: 0;">
+    <a href="/contact-page" style="position: absolute; right:0; left:0; top:50%;">Contact</a>
+  </div>
+  <div style="
       position: fixed;  
-      right:30px;
+      right:-65px;
       bottom:30px;
-      background-image: url('../assets/mouse.png');
       background-size: 100% 100%;
       width: 100px;
       height: 100px;
       transform: translate(-50%);"
-      (click)="scroll_click()"
-      >
-  <!--img src="../assets/mouse.png" alt=""-->
-</div>
-<div class="sidenavright">
-<a href="/contact-page">Contact</a>
-</div><!--
-<img class="image-responsive undercont" src="../../../assets/undercont.png"alt="Site under consruction">
--->
+    (click)="scroll_click()" id="mouse_icon">
+    <img src="../assets/mouse.png" alt="" style="position: absolute; top:0; left:0; width:100%; height:100%;">
+    <img src="../assets/mouseup.png" alt="" style="position: absolute; top:0; left:0; width:100%; height:100%; display: none;" class="mouse_animup">
+    <img src="../assets/mousedn.png" alt="" style="position: absolute; top:0; left:0; width:100%; height:100%;" class="mouse_animdn">
+  </div>
 </div>

@@ -11,12 +11,13 @@ import { ContactComponent } from './outcontainer/components/contact/contact.comp
 import {MainPageComponent} from './outcontainer/components/main-page/main-page.component';
 import { Routes, RouterModule} from '@angular/router';
 import { PanormComponent } from './outcontainer/components/panorm/panorm.component';
+import { WorkingComponent } from './outcontainer/components/working/working.component';
 
 const appRouts=[
   {path: 'team-page', component: TeamComponent},
   {path: 'contact-page', component: ContactComponent, },
   {path: 'home', component: OutcontainerComponent, pathMatch: 'full'},
-  {path:'', pathMatch:'full', redirectTo:'/home'}
+  {path:'', component:WorkingComponent, pathMatch:'full'}
 ]
 
 @NgModule({
@@ -29,7 +30,8 @@ const appRouts=[
     TeamComponent,
     ContactComponent,
     MainPageComponent,
-    PanormComponent
+    PanormComponent,
+    WorkingComponent
   ],
   imports: [
     RouterModule.forRoot(appRouts, {enableTracing:false}),

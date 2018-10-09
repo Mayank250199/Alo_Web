@@ -1315,11 +1315,11 @@
     width: 50px;
   }
   .team-member .each-item:hover .profile-content {
-    -o-transform: translate3d(0, 15px, 0) rotate(90deg);
-    -ms-transform: translate3d(0, 15px, 0) rotate(90deg);
-    -moz-transform: translate3d(0, 15px, 0) rotate(90deg);
-    -webkit-transform: translate3d(0, 15px, 0) rotate(90deg);
-    transform: translate3d(0, 15px, 0) rotate(90deg);
+    -o-transform: translate3d(0, 45px, 0) rotate(90deg);
+    -ms-transform: translate3d(0, 45px, 0) rotate(90deg);
+    -moz-transform: translate3d(0, 45px, 0) rotate(90deg);
+    -webkit-transform: translate3d(0, 45px, 0) rotate(90deg);
+    transform: translate3d(0, 45px, 0) rotate(90deg);
     position: relative;
     text-align: left;
     margin: 0;

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var $:any;
 
 @Component({
   selector: 'app-panorm',
@@ -11,7 +12,24 @@ export class PanormComponent implements OnInit {
 
   ngOnInit() {
     document.getElementById('pan_img').onmousemove = this.lol;
+    document.getElementById('disp_box').onmousemove = this.lol;
+    this.this=this;
   }
+  ngAfterViewInit(){
+    
+    //console.log('after view init pan');
+    /*$('#pan_img').load($(this).attr("href"),function(){
+      var pan_img = document.getElementById('pan_img');
+      pan_img.parentElement.scrollLeft = pan_img.scrollWidth*0.2959;
+    });*/
+    //ltry();
+    
+  }
+  scroll_init(){
+  }
+  p_x=0.0;
+  this:any;
+  p_y=0.0;
   lol(e) {
     //console.log(e);
     var img = document.getElementById('pan_img');
@@ -39,12 +57,52 @@ export class PanormComponent implements OnInit {
     var x=m_posx - e_posx, y=m_posy - e_posy;
     
     var p_x = (x+img.parentElement.scrollLeft)/img.scrollWidth*100, p_y=y/img.scrollHeight*100;
-    var coordinates=[
-      []
+    var texts=[
+      "Social Skills",
+      "Electrical Engineering",
+      "Filmmaking",
+      "Product Design",
+      "<b>Human Psychology<b> forms the core of our interactions and relationships with people.<br>Learn the basics of persuasion and emotion regulation by putting yourself in the shoes of teenager during her birthday week",
+      "Human Psychology",
+      "Mechanical Engineering",
+      "Explore and the learn for the real world like never before",
+      "Finance",
+      "Civil Engineering",
+      "Fashion Design",
+      "Law",
     ]
-    //console.log(m_posx);
-    var x_over = m_posx<window.innerWidth/2?-50:-240, y_over = m_posy<window.innerHeight/2?10:-140;
+    var coordinates=[
+      [12.855007473841553, 29.21686746987952, 14.349775784753364, 33.58433734939759, texts[0]],
+      [19.33233682112606, 6.475903614457831, 21.026407573492776, 11.44578313253012, "Electrical Engineering"],
+      [19.382162431489785, 45.63253012048193, 21.026407573492776, 50.30120481927711, "Filmmaking"],
+      [43.846537120079724, 4.216867469879518, 45.54060787244644,9.036144578313253, "Product Design"],
+      [48.629795714997506, 82.53012048192771, 50.2740408570005, 87.19879518072288, "Human Psychology"],
+      [59.342301943198805, 56.92771084337349, 60.98654708520179, 61.897590361445786, "Mechanical Engineering"],
+      [64.07573492775288, 26.20481927710843, 65.8196312904833, 31.475903614457827, "Explore and the learn for the real world like never before"],
+      [72.99451918285999, 45.78313253012048, 74.6885899352267, 50.602409638554214, "Finance"],
+      [77.13004484304933, 12.650602409638553, 78.82411559541605, 17.46987951807229, "Civil Engineering"],
+      [80.51818634778276, 75, 82.16243148978575, 80.12048192771084, "Fashion Design"],
+      [94.07075236671649, 23.795180722891565, 95.7648231190832, 28.614457831325304, "Law"],
+      [90.98156452416542, 57.98192771084337, 92.57598405580468, 62.80120481927711, "asdx"]
+    ]
+    //console.log(p_x, p_y);
+    window['p_x']=p_x;
+    window['p_y']=p_y;
     var box = document.getElementById('disp_box');
+    var disp='none', pos='';
+    for(var i in coordinates){
+      // x1<x1<x2 && y1<y<y2
+      if(p_x>=coordinates[i][0] && p_x<=coordinates[i][2] && p_y>=coordinates[i][1] && p_y<=coordinates[i][3])
+      {
+        disp='block';
+        pos=i;
+        break;
+      }
+      
+    }
+    if(disp=='block') box.innerHTML=texts[pos];
+    var x_over = m_posx<window.innerWidth/2?10:-160, y_over = m_posy<window.innerHeight/2?10:-(box.scrollHeight);
+    box.style.display=disp;
     box.style.left=x+x_over+'px';
     box.style.top=y+y_over+'px';
     
@@ -73,6 +131,11 @@ export class PanormComponent implements OnInit {
       if(!this.scrolling) clearInterval(a);
     }, 10);
   }
+  print(){
+    //console.log(window['p_x']+", "+window['p_y']+", ");
+  }
 }
-
-
+$(document).ready(()=>{var pan_img = document.getElementById('pan_img');
+pan_img.parentElement.scrollLeft = pan_img.scrollWidth*0.2959;
+//console.log('done');
+})

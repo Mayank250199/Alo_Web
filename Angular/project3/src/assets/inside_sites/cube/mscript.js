@@ -10,7 +10,7 @@ function getDefs(){
 	        document.getElementsByClassName('arrow-left')[0].onclick=left_;
             document.getElementsByClassName('arrow-right')[0].onclick=right_;
             disable_default_scrolling()
-            console.log('did it');
+            //console.log('did it');
         }, 500);
     }
 }
@@ -25,7 +25,7 @@ function disable_default_scrolling(){
 
 function onScroll(e){
     //if(e.deltaY>1 || e.deltaY<-1) return;
-    console.log(e);
+    //console.log(e);
      // dont proceed if already animating
 
     //desktop mode

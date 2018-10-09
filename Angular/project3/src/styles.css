@@ -1,5 +1,5 @@
-::-webkit-scrollbar{
-    width: 0;
+::-webkit-scrollbar { 
+    display: none; 
 }
 @font-face {
     font-family: myFirstFont;
@@ -9,6 +9,8 @@
     font-family: myFirstFont /*Replace with your custom font*/, sans-serif !important;
       line-height: 25px !important;
     /*Add the !important to overwrite all elements*/
+    /*height: 100%;*/
+    height: auto;
   }
   html, body {
       max-width: 100%;
@@ -16,4 +18,5 @@
       line-height: 25px;
       height: 100%;
       margin: 0;
+      padding: 0;
   }

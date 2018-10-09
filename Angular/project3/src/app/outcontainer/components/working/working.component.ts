@@ -10,6 +10,8 @@ export class WorkingComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    window.location.href = "/assets/undercon.html";
   }
 
 }
+

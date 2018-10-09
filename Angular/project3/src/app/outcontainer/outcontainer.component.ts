@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { $ } from 'protractor';
+declare var $:any;
 
 @Component({
   selector: 'app-outcontainer',
@@ -17,7 +17,17 @@ export class OutcontainerComponent implements OnInit {
     this.myFullPage = window['fullpage']('#mfullpage', {
       licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
       scrollOverflow:true,
-      sectionsColor : ['#ccc', '#fff']
+      sectionsColor : ['#ccc', '#fff'],
+      onLeave: function(origin, destination, direction){
+        //console.log(origin, destination, direction);
+        $('.mouse_animup').hide();
+        $('.mouse_animdn').show();
+        if(destination.isFirst) $('.mouse_animup').hide();
+        else if(destination.isLast) {
+          $('.mouse_animdn').hide();
+          $('.mouse_animup').show();
+        }
+      }
     });
     var self=this;
     window['full_page']=this.myFullPage;

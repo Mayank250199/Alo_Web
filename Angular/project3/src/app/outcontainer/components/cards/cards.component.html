@@ -1,39 +1,75 @@
-<div >
-<div>
-  <img style="position: relative;left: 50%;transform: perspective(1px) translateX(-50%);" src="../../../../assets/Logo.png" width="70px;"alt="">
-  <h1 style="color:grey!important;font-size:23px;" class="text-center">OFFERED LEARNING EXPERIENCES</h1>
-
-    <section id="slider">
-  <input type="radio" name="slider" id="s1">
-  <input type="radio" name="slider" id="s2">
-  <input type="radio" name="slider" id="s3" checked>
-  <input type="radio" name="slider" id="s4">
-  <input type="radio" name="slider" id="s5">
-  <div class="text-center"*ngFor="let slide of slides; let i = index"
-    [attr.for]="'s'+(i+1)"
-    id="slide{{i+1}}"
-    (mouseenter)="flip(i)"
-    (mouseleave)="unflip(i)"
+<!--div style="height:100%;">
+    
+</div>
+<div class="text-center carnav1" style="color:#fff;font-size:21px; position: relative; bottom:-30px;">
+  Interested in what we do?
+  <br>
+  <a href="" style="color:cyan;font-size:23px;">Learn more</a>
+  <span style="color: cyan; display: inline;">
     >
-     <div class="flip" id="slide_flip{{i+1}}">
-        <div class="front" style="backface-visibility: hidden;">
-            <img src="{{ slide.image_front }}" alt="" />
-        </div>
-        <div class="back" style="backface-visibility: hidden;">
-            <img src="{{ slide.image_back }}" alt="" />
-        </div>
-     </div>
+  </span>
+</div-->
+<div style="height: -webkit-fill-available;">
+  <div style="position: absolute; top:10px; left:0; right:0; width:100%;">
+    <!-- head of panorma view -->
+    <img style="position: absolute;left: 50%;transform: perspective(1px) translateX(-50%); width: 70px; height:70px;"
+      src="../../../../assets/Logo.png" width="70px;" alt="">
   </div>
-  <img class="arrow" (mouseenter)="animate(-1)" (mouseleave)="animate(0)" (click)="slide(-1)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Double_angle_left_font_awesome.svg/512px-Double_angle_left_font_awesome.svg.png" width="50px;" class="left" alt="">
-  <img class="arrow" (mouseenter)="animate(1)" (mouseleave)="animate(0)" (click)="slide(1)"src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Double_angle_left_font_awesome.svg/512px-Double_angle_left_font_awesome.svg.png" width="50px;" class="right" alt="">
+  <div style="position: absolute; top:50%;transform:translateY(-50%); left:0; right:0; width:100%;">
+    <h1 style="color:grey!important;font-size:23px; top: -16px; position: absolute;left: 50%;transform: perspective(1px) translateX(-50%);"
+      class="text-center">OFFERED LEARNING EXPERIENCES</h1>
+    <section id="slider">
+      <input type="radio" name="slider" id="s1">
+      <input type="radio" name="slider" id="s2">
+      <input type="radio" name="slider" id="s3" checked>
+      <input type="radio" name="slider" id="s4">
+      <input type="radio" name="slider" id="s5">
+      <div class="text-center" *ngFor="let slide of slides; let i = index" data-for="s1" id="slide{{i+1}}"
+      (mouseenter)="flip(i)" (mouseleave)="unflip(i)" (click)="jump_to(i)">
+        <div class="flip" id="slide_flip{{i+1}}" style="backface-visibility: hidden;">
+          <div class="front" style="backface-visibility: hidden;">
+            <img src="{{ slide.image_back }}" alt="" style="backface-visibility: hidden;" />
+          </div>
+          <div class="back" style="backface-visibility: hidden;">
+            <img src="{{ slide.image_front }}" alt="" style="backface-visibility: hidden;" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div style="position: absolute; left:0; top:0; height:100%; width:40px; background-color:rgba(0,0,0,0.1); text-align: left;"
+    (mouseenter)="animate(-1)" (mouseleave)="animate(0)" (click)="slide(-1)" id="cards_leftbar">
+    <!--img class="arrow" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Double_angle_left_font_awesome.svg/512px-Double_angle_left_font_awesome.svg.png"
+        width="50px;" class="left" alt="" style="top:50%; transform: translateY(-50%);">
+      <img class="arrow" (mouseenter)="animate(1)" (mouseleave)="animate(0)" (click)="slide(1)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Double_angle_left_font_awesome.svg/512px-Double_angle_left_font_awesome.svg.png"
+        width="50px;" class="right" alt=""-->
+    <span style="position: relative;
+      top: 50%;
+      color: cyan;
+      left: 0;
+      transform: translateY(-50%);">
+      << </span> </div> 
+    <div style="position: absolute; top:0%; right:0; width:40px;height: 100%;; background-color:rgba(0,0,0,0.1); z-index: 3;text-align: right;"
+        (mouseenter)="animate(1)" (mouseleave)="animate(0)" (click)="slide(1)" id="cards_rightbar">
+        <!--img class="arrow" (mouseenter)="animate(-1)" (mouseleave)="animate(0)" (click)="slide(-1)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Double_angle_left_font_awesome.svg/512px-Double_angle_left_font_awesome.svg.png"
+        width="50px;" class="left" alt=""-->
+        <!--img class="arrow" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Double_angle_left_font_awesome.svg/512px-Double_angle_left_font_awesome.svg.png"
+        width="50px;" class="right" alt=""-->
+        <span style="position: relative;
+        top: 50%;
+        right: 0;
+        color: cyan;
+        transform: translateY(-50%);">>></span>
 
-</section>
+  </div>
+  <div style="position: absolute; bottom:10px; left:0; right:0; width:100%; text-align: center; color: #fff;">
+    <!-- head of panorma view -->
+    Interested in what we do?
+    <br>
+    <a href="/contact-page" style="color:cyan;font-size:23px;">Learn more</a>
+    <span style="color: cyan; display: inline; position: relative; top: 4px;">
+      >
+    </span>
+  </div>
 
-<div class="cnav">
-
-  <!-- <button class="primary carnav" >Prev</button>&nbsp;&nbsp;
-  <button class="primary carnav" >Next</button> -->
 </div>
-</div>
-</div>
-<p class="text-center carnav1"style="color:#fff;font-size:21px; position: relative; bottom:-30px;">Interested in what we do? <br /><a href="" style="color:cyan;font-size:23px;">Learn more></a></p>

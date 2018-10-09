@@ -306,3 +306,27 @@ h1 {
     left: 0;
   }
 }
+
+@keyframes manimedn{
+  0% {transform:translateY(0);}
+  /*25% {transform:translateY(4px);}*/
+  50% {transform:translateY(12px);}
+  100% {transform:translateY(0px);}
+}
+@keyframes manimeup{
+  0% {transform:translateY(0);}
+  /*25% {transform:translateY(-4px);}*/
+  50% {transform:translateY(-12px);}
+  100% {transform:translateY(0px);}
+}
+
+.mouse_animup{
+  animation-name: manimeup;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.mouse_animdn{
+  animation-name: manimedn;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}

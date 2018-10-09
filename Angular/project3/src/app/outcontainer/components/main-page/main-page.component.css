@@ -36,7 +36,7 @@
   }
   .about{
       color: #06b2bd !important;
-      margin-left: 80px;
+      /*margin-left: 80px;*/
   }
   .about strong{
       color: #00ecf1 !important;
@@ -55,7 +55,7 @@
   }
   @media only screen and (min-width: 952px) and (max-width: 992px) {
     .f23{
-      font-size: 17px;
+      font-size: 13px;
     }
     .mainhead{
       margin-top: 50px;
@@ -71,7 +71,7 @@
   }
   @media only screen and (min-width: 700px) and (max-width: 955px) {
     .f23{
-      font-size: 15px;
+      font-size: 17px;
     }
     .mainhead{
       margin-top: 50px;
@@ -118,7 +118,7 @@
   }
   @media only screen and (min-width: 299px) and (max-width: 598px) {
     .f23{
-      font-size: 12px;
+      font-size: 13px;
     }
     .mainhead{
       margin-top: 100px;
