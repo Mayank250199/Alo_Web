@@ -62,7 +62,7 @@ export class PanormComponent implements OnInit {
       "Electrical Engineering",
       "Filmmaking",
       "Product Design",
-      "<b>Human Psychology<b> forms the core of our interactions and relationships with people.<br>Learn the basics of persuasion and emotion regulation by putting yourself in the shoes of teenager during her birthday week",
+      "<b>Human Psychology</b> forms the core of our interactions and relationships with people.<br>Learn the basics of persuasion and emotion regulation by putting yourself in the shoes of teenager during her birthday week",
       "Human Psychology",
       "Mechanical Engineering",
       "Explore and the learn for the real world like never before",
@@ -101,7 +101,7 @@ export class PanormComponent implements OnInit {
       
     }
     if(disp=='block') box.innerHTML=texts[pos];
-    var x_over = m_posx<window.innerWidth/2?10:-160, y_over = m_posy<window.innerHeight/2?10:-(box.scrollHeight);
+    var x_over = m_posx<window.innerWidth/2?pos=='4'?-(box.scrollWidth):10:-(box.scrollWidth), y_over = m_posy<window.innerHeight/2?10:-(box.scrollHeight);
     box.style.display=disp;
     box.style.left=x+x_over+'px';
     box.style.top=y+y_over+'px';
@@ -135,7 +135,9 @@ export class PanormComponent implements OnInit {
     //console.log(window['p_x']+", "+window['p_y']+", ");
   }
 }
-$(document).ready(()=>{var pan_img = document.getElementById('pan_img');
-pan_img.parentElement.scrollLeft = pan_img.scrollWidth*0.2959;
-//console.log('done');
+$(window).on('load', ()=>{
+  var pan_img = document.getElementById('pan_img');
+  var a = (58.29596412556054/100 - pan_img.parentElement.parentElement.scrollWidth/(2*pan_img.parentElement.scrollWidth))*pan_img.parentElement.scrollWidth
+  pan_img.parentElement.scrollLeft=a
+  console.log(a);
 })

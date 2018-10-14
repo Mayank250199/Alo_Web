@@ -17,7 +17,8 @@ const appRouts=[
   {path: 'team-page', component: TeamComponent},
   {path: 'contact-page', component: ContactComponent, },
   {path: 'home', component: OutcontainerComponent, pathMatch: 'full'},
-  {path:'', component:WorkingComponent, pathMatch:'full'}
+  //{path:'', component:WorkingComponent, pathMatch:'full'}
+  {path:'', redirectTo:'/home', pathMatch:'full' }
 ]
 
 @NgModule({

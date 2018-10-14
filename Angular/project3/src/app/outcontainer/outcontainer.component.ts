@@ -27,6 +27,11 @@ export class OutcontainerComponent implements OnInit {
           $('.mouse_animdn').hide();
           $('.mouse_animup').show();
         }
+        if(destination.index==2){
+          var vid:any=document.getElementById('responsive').children[0];
+          vid.play();
+          console.log('playing');
+        }
       }
     });
     var self=this;
