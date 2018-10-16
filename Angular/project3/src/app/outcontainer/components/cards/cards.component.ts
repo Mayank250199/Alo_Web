@@ -10,7 +10,7 @@ declare var $:any, jquery:any;
 export class CardsComponent implements AfterViewInit{
 
   constructor(private cde:ChangeDetectorRef) {}
-  
+
   ngOnInit(){
 
   }
@@ -28,10 +28,10 @@ export class CardsComponent implements AfterViewInit{
 
 
   slides = [
-    {image_front:'../../../assets/card_page/electrical.png',image_back:'../../../assets/card_page/electricalfront.png'},
+    {image_front:'../../../assets/card_page/product.png',image_back:'../../../assets/card_page/productfront.png'},
     {image_front:'../../../assets/card_page/emotional.png', image_back:'../../../assets/card_page/emotionalfront.png'},
     {image_front:'../../../assets/card_page/Law.png',image_back:'../../../assets/card_page/Lawfront.png'},
-    {image_front:'../../../assets/card_page/product.png',image_back:'../../../assets/card_page/productfront.png'},
+    {image_front:'../../../assets/card_page/electrical.png',image_back:'../../../assets/card_page/electricalfront.png'},
     {image_front:'../../../assets/card_page/social.png',image_back:'../../../assets/card_page/socialfront.png'},
   ];
   slide(dir){
@@ -52,7 +52,7 @@ export class CardsComponent implements AfterViewInit{
   animating=false;
   animate(val=0){
     /*if(val==0) this.animating=false;
-    if(this.animating) return;  
+    if(this.animating) return;
     this.animating=true;
     */
     if(val!=0){
@@ -73,7 +73,7 @@ export class CardsComponent implements AfterViewInit{
         document.getElementById("cards_leftbar").style.backgroundColor="rgba(0,0,0,0.1)"
         document.getElementById("cards_rightbar").style.backgroundColor="rgba(0,0,0,0.1)"
     }
-    
+
   }
 }
 var prevslx=0, direction=0, curr=3;
@@ -122,5 +122,3 @@ function onSlide(e){
  function divunflip(no){
     $('#slide_flip'+no).flip(false);
  }
-
-
