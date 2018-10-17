@@ -58,18 +58,18 @@ export class PanormComponent implements OnInit {
 
     var p_x = (x+img.parentElement.scrollLeft)/img.scrollWidth*100, p_y=y/img.scrollHeight*100;
     var texts=[
-      "<b>Social Skills</b> are the most widely used skills for effective conversations in both personal and professional life.<br> Practice & Learn articulation & conversation techniques by implementing health awareness campaigns for a Member of the Parliament.",
-      "<b>Electrical Engineering</b> forms the backbone of all 21st-century technological advancement.<br>Learn concepts of circuit design & binary arithmetic by prototyping your own handheld gaming device.",
-      "<b>Filmmaking</b> is the most effective medium of sharing your stories that often have the potential to change the world order.<br>Learn the art of storytelling & visual communication by scripting, directing and shooting your own short movie clip",
-      "<b>Product Design</b> is all about developing easy to use & good looking products that exist everywhere, making our lives fairly comfortable.<br>Learn user research techniques & prototyping concepts by ideating & developing innovative products for the elderly & disabled.",
-      "<b>Human Psychology</b>  forms the core of our interactions and relationships with people.Learn the basis of persuasion & stress coping strategies by delivering elevator pitch of products & investigating stories of war.",
-      "<b>Mechanical Engineering</b> finds itself in every machine that humans have made to make their lives easier & advance the civilization.<br>Learn concepts of machine design & mechanics by conceptualizing & developing your own mini air engine.",
+      "<b>Social Skills</b> are the most widely used skills for effective conversations in both personal and professional life.<br> Practice & Learn <b>articulation & conversation</b> techniques by implementing health awareness campaigns for a Member of the Parliament.",
+      "<b>Electrical Engineering</b> forms the backbone of all 21st-century technological advancement.<br>Learn concepts of <b>circuit design & binary arithmetic</b> by prototyping your own handheld gaming device.",
+      "<b>Filmmaking</b> is the most effective medium of sharing your stories that often have the potential to change the world order.<br>Learn the art of <b>storytelling & visual communication</b> by scripting, directing and shooting your own short movie clip",
+      "<b>Product Design</b> is all about developing easy to use & good looking products that exist everywhere, making our lives fairly comfortable.<br>Learn <b>user research techniques & prototyping concepts</b> by ideating & developing innovative products for the elderly & disabled.",
+      "<b>Human Psychology</b>  forms the core of our interactions and relationships with people.Learn the basis of <b>persuasion & stress coping strategies</b> by delivering elevator pitch of products & investigating stories of war.",
+      "<b>Mechanical Engineering</b> finds itself in every machine that humans have made to make their lives easier & advance the civilization.<br>Learn concepts of <b>machine design & mechanics</b> by conceptualizing & developing your own mini air engine.",
       "Explore and Learn for the real world like never before.",
-      "<b>Civil Engineering</b> is central to the design & development of urban cities.<br>Develop strong 3d visualisation & problem solving skills by building models of an urban smart city under real life constraints.",
-      "<b>Finance</b> governs the economic security & prosperity of individuals & dictates long term development of organisations all across the world.<br>Learn personal financial management & investment strategies by participating in stock market simulations.",
-      "<b>Negotiation</b> is a core skill to find a common ground despite difference in opinions at work & home.<br>Develop synchrony techniques & master body language processing by executing mock business deals for your company.",
-      "<b>Fashion Designing</b> is in every piece of cloth wear we use, directly creating long-lasting impressions of ourselves & others in the society.<br>Learn the nuances of good fashion sense & creative ideation techniques by designing your own take home t-shirt.",
-      "<b>Law</b> is an art of defining justice and interpreting it for various different situations.<br>Learn argument formation & basics of law by fighting a legal hit & run case of a famous Indian Celebrity.",
+      "<b>Finance</b> governs the economic security & prosperity of individuals & dictates long term development of organisations all across the world.<br>Learn <b>personal financial management & investment strategies</b> by participating in stock market simulations.",
+      "<b>Civil Engineering</b> is central to the design & development of urban cities.<br>Develop strong <b>3d visualisation & problem solving skills<b> by building models of an urban smart city under real life constraints.",
+      "<b>Negotiation</b> is a core skill to find a common ground despite difference in opinions at work & home.<br>Develop <b>synchrony techniques</b> & master <b>body language</b> processing by executing mock business deals for your company.",
+      "<b>Fashion Designing</b> is in every piece of cloth wear we use, directly creating long-lasting impressions of ourselves & others in the society.<br>Learn the nuances of good <b>fashion sense</b> & <b>creative ideation</b> techniques by designing your own take home t-shirt.",
+      "<b>Law</b> is an art of defining justice and interpreting it for various different situations.<br>Learn <b>argument formation</b> & <b>basics of law</b> by fighting a legal hit & run case of a famous Indian Celebrity.",
     ]
     var coordinates=[
       [12.855007473841553, 29.21686746987952, 14.349775784753364, 33.58433734939759, texts[0]],
