@@ -6,4 +6,4 @@ git init
 git remote add origin https://github.com/alo-learning/alo-learning.github.io
 git add .
 git commit -m 'launched'
-git push origin master
+git push -f origin master
