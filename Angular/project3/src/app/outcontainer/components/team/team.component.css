@@ -131,11 +131,12 @@
  */
 
  .content-area{
-    background-color: rgb(39, 48, 64);
+    background:#272F41;
  }
  body {
     font-family: 'Open Sans', sans-serif;
-    color: rgb(39,48,64);;
+    color: rgb(39,48,64);
+    background:#272F41;
     font-size: 14px;
     font-style: none;
     line-height: 27px;
