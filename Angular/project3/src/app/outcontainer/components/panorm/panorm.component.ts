@@ -137,7 +137,7 @@ export class PanormComponent implements OnInit {
 }
 $(window).on('load', ()=>{
   var pan_img = document.getElementById('pan_img');
-  var a = (58.29596412556054/100 - pan_img.parentElement.parentElement.scrollWidth/(2*pan_img.parentElement.scrollWidth))*pan_img.parentElement.scrollWidth
-  pan_img.parentElement.scrollLeft=a
+  var a = (58.29596412556054/100 - pan_img.parentElement.parentElement.scrollWidth/(2*pan_img.parentElement.scrollWidth))*pan_img.parentElement.scrollWidth;
+   pan_img.parentElement.scrollLeft=a;
   console.log(a);
 })

@@ -42,43 +42,18 @@ export class TeamComponent implements OnInit {
       position:'Experience Designer'
     },
     {
-      name:'Vani Batra',
-      pic_name: 'Vani.png',
-      position:'Public Relations Executive'
-    },
-    {
-      name:'Manjistha Datta',
-      pic_name: 'Manjistha.png',
-      position:'Psychology Expert'
-    },
-    {
-      name:'Nidhi Jhala',
-      pic_name: 'Nidhi.png',
-      position:'Product Design Expert'
-    },
-    {
       name:'Harshita Arora',
       pic_name: 'Harshita.png',
       position:'Graphic Designer'
     },
     {
-      name:'Nishank Goyal',
-      pic_name: 'Nishank.png',
-      position:'Experience Designer'
+      name:'Tarandeep Singh',
+      pic_name: 'Taran.png',
+      position:'Operations Executive'
     },
     {
-      name:'Ritvik Sharma',
-      pic_name: 'Ritvik.png',
-      position:'Graphic Designer'
-    },
-    {
-      name:'Siddhant Goel',
-      pic_name: 'Sidhant.png',
-      position:'Graphic Designer'
-    },
-    {
-      name:'Siddharth Choubay',
-      pic_name: 'Siddharth.png',
+      name:'Nidhi Jhala',
+      pic_name: 'Nidhi.png',
       position:'Business Executive'
     },
     {
@@ -87,13 +62,8 @@ export class TeamComponent implements OnInit {
       position:'Experience Designer'
     },
     {
-      name:'Sumir Kumar',
-      pic_name: 'Sumir.png',
-      position:'Business Executive'
-    },
-    {
-      name:'Tarandeep Singh',
-      pic_name: 'Taran.png',
+      name:'Nishank Goyal',
+      pic_name: 'Nishank.png',
       position:'Experience Designer'
     },
     {
@@ -102,14 +72,44 @@ export class TeamComponent implements OnInit {
       position:'Film Making Expert'
     },
     {
+      name:'Siddhant Goel',
+      pic_name: 'Sidhant.png',
+      position:'Experience Designer'
+    },
+    {
+      name:'Siddharth Choubay',
+      pic_name: 'Siddharth.png',
+      position:'Business Executive'
+    },
+    {
+      name:'Vani Batra',
+      pic_name: 'Vani.png',
+      position:'Public Relations Executive'
+    },
+    {
+      name:'Sumir Kumar',
+      pic_name: 'Sumir.png',
+      position:'Business Executive'
+    },
+    {
       name:'Yash Bhatnagar',
       pic_name: 'Yash.png',
       position:'Experience Designer'
     },
     {
+      name:'Ritvik Sharma',
+      pic_name: 'Ritvik.png',
+      position:'Electrical Engineering Expert'
+    },
+    {
       name:'Mayank Jha',
       pic_name: 'mayankjha.jpg',
       position:'Web Developer'
+    },
+    {
+      name:'Manjistha Datta',
+      pic_name: 'Manjistha.png',
+      position:'Psychology Expert'
     },
 
 

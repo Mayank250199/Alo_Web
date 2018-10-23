@@ -204,12 +204,12 @@ a:focus {
   font-size: 14px;
   line-height: 40px;
   font-weight: 600;
-  color: #f7ac54;
+  color: rgb(39,208,215);
   text-transform: uppercase;
   margin-bottom: 0px;
 }
 .color {
-  color: #f7ac54;
+  color: rgb(39,208,215);
 }
 .section-header {
   margin-bottom: 70px;
@@ -359,7 +359,7 @@ section.section {
 .btn .icon {
   position: relative;
   top: 3px;
-  color: #f7ac54;
+  color: rgb(39,208,215);
 }
 .btn.left-icon .icon {
   margin-right: 4px;
@@ -373,7 +373,7 @@ section.section {
 }
 .btn.btn-fill {
   padding: 14px 30px;
-  background-color: #f7ac54;
+  background-color: rgb(39,208,215);
   color: #282828;
 }
 .btn.btn-fill,
@@ -385,9 +385,9 @@ section.section {
 .btn.btn-border {
   background-color: transparent;
   border: 2px solid;
-  border-color: #f7ac54;
+  border-color: rgb(39,208,215);
   padding: 12px 30px;
-  color: #f7ac54;
+  color: rgb(39,208,215);
 }
 .btn.btn-border:hover {
   background-color: #feb960;
@@ -762,7 +762,7 @@ section.section {
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: #f7ac54;
+  background-color: rgb(39,208,215);
   -o-transition: all 400ms cubic-bezier(0.86, 0, 0.07, 1);
   -ms-transition: all 400ms cubic-bezier(0.86, 0, 0.07, 1);
   -moz-transition: all 400ms cubic-bezier(0.86, 0, 0.07, 1);
@@ -790,7 +790,7 @@ section.section {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .single-form .input-label::after {
-  background-color: #f7ac54;
+  background-color: rgb(39,208,215);
   -o-transform: translate3d(-100%, 0, 0);
   -ms-transform: translate3d(-100%, 0, 0);
   -moz-transform: translate3d(-100%, 0, 0);
@@ -834,7 +834,7 @@ section.section {
 }
 .single-form .form-control:focus + .input-label .label-text {
   font-size: 11px;
-  color: #f7ac54;
+  color: rgb(39,208,215);
   -o-transform: translate3d(0, -26px, 0);
   -ms-transform: translate3d(0, -26px, 0);
   -moz-transform: translate3d(0, -26px, 0);
@@ -850,7 +850,7 @@ section.section {
 }
 .single-form .input-filled .input-label .label-text {
   font-size: 11px;
-  color: #f7ac54;
+  color: rgb(39,208,215);
   -o-transform: translate3d(0, -26px, 0);
   -ms-transform: translate3d(0, -26px, 0);
   -moz-transform: translate3d(0, -26px, 0);
@@ -984,7 +984,7 @@ section.section {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #f7ac54;
+  background-color: rgb(39,208,215);
   -o-transition-delay: 0s ;
   -ms-transition-delay: 0s ;
   -moz-transition-delay: 0s ;
@@ -1074,7 +1074,7 @@ section.section {
   line-height: 25px;
 }
 .team-member .each-item .profile-content .name {
-  color: #f7ac54;
+  color: rgb(39,208,215);
   font-weight: 600;
   text-transform: uppercase;
 }
