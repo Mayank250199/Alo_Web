@@ -23,15 +23,19 @@ export class PanormComponent implements OnInit {
       pan_img.parentElement.scrollLeft = pan_img.scrollWidth*0.2959;
     });*/
     //ltry();
-
+    //this.show_started=false;
+    console.log(this.show_started);
   }
   scroll_init(){
   }
   p_x=0.0;
   this:any;
   p_y=0.0;
+  show_started=false;
   lol(e) {
-    //console.log(e);
+    //console.log(this.show_started);
+    if(this.show_started)return;
+    
     var img = document.getElementById('pan_img');
     var m_posx = 0, m_posy = 0, e_posx = 0, e_posy = 0;
       var obj:any = img;
@@ -96,6 +100,10 @@ export class PanormComponent implements OnInit {
       {
         disp='block';
         pos=i;
+        this.show_started=true;
+        setTimeout(() => {
+          sel.show_started = false;
+        }, 2000);
         break;
       }
 
@@ -105,6 +113,9 @@ export class PanormComponent implements OnInit {
     box.style.display=disp;
     box.style.left=x+x_over+'px';
     box.style.top=y+y_over+'px';
+
+    var sel=this;
+    
 
 
   }
