@@ -17,16 +17,28 @@ export class PanormComponent implements OnInit {
   }
   ngAfterViewInit(){
 
+    $(window).on('load', ()=>{
     var p=[ 0.48629795714997506, 0.8253012048192771]
     var box = document.getElementById('disp_box');
     box.style.display='block';
     box.innerHTML = "<b>Human Psychology</b>  forms the core of our interactions and relationships with people.Learn the basis of <b>persuasion & stress coping strategies</b> by delivering elevator pitch of products & investigating stories of war."
-    box.style.left = ((document.getElementById('pan_img').scrollWidth*p[0]+box.scrollWidth+40))+'px';
+    box.style.left = ((document.getElementById('pan_img').scrollWidth*p[0]+40-document.getElementById('pan_img').parentElement.scrollLeft))+'px';
     box.style.top = ((document.getElementById('pan_img').scrollHeight*p[1]-box.scrollHeight+40))+'px';
     //console.log(box.style.left, box.style.top);
+    
+    
+    p=[0.7299451918285999, 0.4578313253012048]
+    box = document.getElementById('disp_box2');
+    box.style.display='block';
+    box.innerHTML = "<b>Finance</b> governs the economic security & prosperity of individuals & dictates long term development of organisations all across the world.<br>Learn <b>personal financial management & investment strategies</b> by participating in stock market simulations."
+    box.style.left = ((document.getElementById('pan_img').scrollWidth*p[0]-box.scrollWidth-document.getElementById('pan_img').parentElement.scrollLeft))+'px';
+    box.style.top = ((document.getElementById('pan_img').scrollHeight*p[1]))+'px';
+    //console.log(document.getElementById('pan_img').scrollWidth,p[0],box.scrollWidth);
     setTimeout(() => {
+      document.getElementById('disp_box').style.display='none'
       box.style.display='none'
-    }, 3000);
+    }, 13000);
+  });
   }
   scroll_init(){
   }
