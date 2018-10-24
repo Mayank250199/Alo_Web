@@ -17,25 +17,24 @@ export class PanormComponent implements OnInit {
   }
   ngAfterViewInit(){
 
-    //console.log('after view init pan');
-    /*$('#pan_img').load($(this).attr("href"),function(){
-      var pan_img = document.getElementById('pan_img');
-      pan_img.parentElement.scrollLeft = pan_img.scrollWidth*0.2959;
-    });*/
-    //ltry();
-    //this.show_started=false;
-    console.log(this.show_started);
+    var p=[ 0.48629795714997506, 0.8253012048192771]
+    var box = document.getElementById('disp_box');
+    box.style.display='block';
+    box.innerHTML = "<b>Human Psychology</b>  forms the core of our interactions and relationships with people.Learn the basis of <b>persuasion & stress coping strategies</b> by delivering elevator pitch of products & investigating stories of war."
+    box.style.left = ((document.getElementById('pan_img').scrollWidth*p[0]+box.scrollWidth+40))+'px';
+    box.style.top = ((document.getElementById('pan_img').scrollHeight*p[1]-box.scrollHeight+40))+'px';
+    //console.log(box.style.left, box.style.top);
+    setTimeout(() => {
+      box.style.display='none'
+    }, 3000);
   }
   scroll_init(){
   }
   p_x=0.0;
   this:any;
   p_y=0.0;
-  show_started=false;
   lol(e) {
-    //console.log(this.show_started);
-    if(this.show_started)return;
-    
+    //console.log(e);
     var img = document.getElementById('pan_img');
     var m_posx = 0, m_posy = 0, e_posx = 0, e_posy = 0;
       var obj:any = img;
@@ -66,7 +65,7 @@ export class PanormComponent implements OnInit {
       "<b>Electrical Engineering</b> forms the backbone of all 21st-century technological advancement.<br>Learn concepts of <b>circuit design & binary arithmetic</b> by prototyping your own handheld gaming device.",
       "<b>Filmmaking</b> is the most effective medium of sharing your stories that often have the potential to change the world order.<br>Learn the art of <b>storytelling & visual communication</b> by scripting, directing and shooting your own short movie clip",
       "<b>Product Design</b> is all about developing easy to use & good looking products that exist everywhere, making our lives fairly comfortable.<br>Learn <b>user research techniques & prototyping concepts</b> by ideating & developing innovative products for the elderly & disabled.",
-      "<b>Human Psychology</b>  forms the core of our interactions and relationships with people.<br>Learn the basis of <b>persuasion & stress coping strategies</b> by delivering elevator pitch of products & investigating stories of war.",
+      "<b>Human Psychology</b>  forms the core of our interactions and relationships with people.Learn the basis of <b>persuasion & stress coping strategies</b> by delivering elevator pitch of products & investigating stories of war.",
       "<b>Mechanical Engineering</b> finds itself in every machine that humans have made to make their lives easier & advance the civilization.<br>Learn concepts of <b>machine design & mechanics</b> by conceptualizing & developing your own mini air engine.",
       "Explore and Learn for the real world like never before.",
       "<b>Finance</b> governs the economic security & prosperity of individuals & dictates long term development of organisations all across the world.<br>Learn <b>personal financial management & investment strategies</b> by participating in stock market simulations.",
@@ -100,10 +99,6 @@ export class PanormComponent implements OnInit {
       {
         disp='block';
         pos=i;
-        this.show_started=true;
-        setTimeout(() => {
-          sel.show_started = false;
-        }, 2000);
         break;
       }
 
@@ -113,9 +108,6 @@ export class PanormComponent implements OnInit {
     box.style.display=disp;
     box.style.left=x+x_over+'px';
     box.style.top=y+y_over+'px';
-
-    var sel=this;
-    
 
 
   }
@@ -148,7 +140,7 @@ export class PanormComponent implements OnInit {
 }
 $(window).on('load', ()=>{
   var pan_img = document.getElementById('pan_img');
-  var a = (58.29596412556054/100 - pan_img.parentElement.parentElement.scrollWidth/(2*pan_img.parentElement.scrollWidth))*pan_img.parentElement.scrollWidth;
-   pan_img.parentElement.scrollLeft=a;
+  var a = (58.29596412556054/100 - pan_img.parentElement.parentElement.scrollWidth/(2*pan_img.parentElement.scrollWidth))*pan_img.parentElement.scrollWidth
+  pan_img.parentElement.scrollLeft=a
   console.log(a);
 })
