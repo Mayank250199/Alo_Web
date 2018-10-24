@@ -102,6 +102,11 @@ export class TeamComponent implements OnInit {
       position:'Electrical Engineering Expert'
     },
     {
+      name:'Gouri jayasurya',
+      pic_name: 'gouri.png',
+      position:'Fashion Design Expert'
+    },
+    {
       name:'Mayank Jha',
       pic_name: 'mayankjha.jpg',
       position:'Web Developer'
