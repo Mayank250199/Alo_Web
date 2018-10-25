@@ -37,7 +37,7 @@ export class PanormComponent implements OnInit {
     setTimeout(() => {
       document.getElementById('disp_box').style.display='none'
       box.style.display='none'
-    }, 13000);
+    }, 3000);
   });
   }
   scroll_init(){
