@@ -1,34 +1,26 @@
-<div class="box">
-    <h4>Contact</h4>
-  <form method="POST" action="https://formspree.io/anooshkotak@gmail.com">
-    <div class="row input-container">
-        <div class="col-xs-12">
-          <div class="styled-input wide">
-            <input type="text" name="NAME" required />
-            <label>Name</label>
+<div class="container contact-form">
+  <form  method="POST" action="https://formspree.io/anooshkotak@gmail.com">
+      <h3>Drop Us a Message</h3>
+     <div class="row">
+          <div class="col-md-6">
+              <div class="form-group">
+                  <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" />
+              </div>
+              <div class="form-group">
+                  <input type="text" name="Email" class="form-control" placeholder="Your Email *" value="" />
+              </div>
+              <div class="form-group">
+                  <input type="text" name="Phone" class="form-control" placeholder="Your Phone Number *" value="" />
+              </div>
+              <div class="form-group">
+                  <input type="submit" name="Submit" class="btnContactSubmit" value="Send Message" />
+              </div>
           </div>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <div class="styled-input">
-            <input type="text" name="Email"required />
-            <label>Email</label>
+          <div class="col-md-6">
+              <div class="form-group">
+                  <textarea name="Message" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+              </div>
           </div>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <div class="styled-input" style="float:right;">
-            <input type="text" name="PHONE"required />
-            <label>Phone Number</label>
-          </div>
-        </div>
-        <div class="col-xs-12">
-          <div class="styled-input wide">
-            <textarea required name="Messege"></textarea>
-            <label>Message</label>
-          </div>
-        </div>
-        <div class="col-xs-12">
-          <button type="submit" class="btn-lrg submit-btn">Send Message</button>
-        </div>
-    </div>
-</form>
-  </div>
+      </div>
+  </form>
+</div>
