@@ -17,7 +17,7 @@ function getDefs(){
 function disable_default_scrolling(){
     if(undefined==swiper){
         getDefs();
-        console.log('it was undefined');
+        //console.log('it was undefined');
     } else {
         swiper.container.off();
     }

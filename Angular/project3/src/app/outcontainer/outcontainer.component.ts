@@ -54,3 +54,7 @@ export class OutcontainerComponent implements OnInit {
    }
   }
 }
+$(window).on("load", ()=>{
+  $('#cubeframe').attr({
+    src:"../../assets/inside_sites/cube/nindex.html"});
+})
