@@ -1,10 +1,9 @@
-<div style="height:100%; position:relative; top:0; left:0; right:0; bottom:0;">
+<div style="height:100%; position: absolute; top:0; left:0; right:0; bottom:0; width: 100%;">
   <div class="button_container" id="toggle" style="position: absolute; right:15px; top:15px; width: 40px;">
     <span class="top"></span>
     <span class="middle"></span>
     <span class="bottom"></span>
   </div>
-
   <div class="overlay" id="overlay">
     <nav class="overlay-menu">
       <ul>
@@ -14,12 +13,12 @@
       </ul>
     </nav>
   </div>
-  <div class="sidenavleft" style="background-color:rgb(26, 32, 43); position: absolute; left:0; top:0; height:100%; width:70px;">
+  <div class="sidenavleft">
     <a id="a" style="position: absolute; right:0; left:0; top:50%; font-size: 20px;" href="/team-page">Team</a>
     <a href="/home"><img src="../../assets/Logo.png" width="67px" alt=""></a>
   </div>
 
-  <div class="main" style="position: absolute; left:0; right:0; height:100%;padding:0;">
+  <div class="main" style="position: absolute; height:100%;padding:0;">
     <router-outlet></router-outlet>
   </div>
   <div class="sidenavright" style="background-color:rgb(26, 32, 43); position: absolute; right:0; top:0; height:100%; width:70px; z-index: 0;">

@@ -2,6 +2,24 @@ var swiper;
 function update_parent(move_down=false){
     console.log(move_down);
 }
+
+var lastY;
+document.scrollingElement.ontouchmove=(e)=>{
+    console.log(e);
+     var currentY = e.changedTouches[0].clientY;
+     if(currentY > lastY){
+         // moved down
+         console.log('up');
+         onScroll(e={deltaX:-1, deltaY:-1});
+         
+     }else if(currentY < lastY){
+         // moved up
+         onScroll(e={deltaX:1, deltaY:1});
+         console.log('down')
+     }
+     lastY = currentY;
+};
+
 function getDefs(){
     if(swiper==undefined){
         setTimeout(()=>{

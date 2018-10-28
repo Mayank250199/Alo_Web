@@ -1,5 +1,5 @@
 <div style="width: 100%; overflow: hidden; height: 100%;line-height: 0px !important;">
-  <div style="position: absolute; left: 0; top: 0; background-color: rgba(0,0,0,0.1);height: 100%; width: 40px; z-index:1;"
+  <div style="position: absolute; left: 0px; top: 0; background-color: rgba(0,0,0,0.1);height: 100%; width: 40px; z-index:1;"
     (mouseenter)="left_in()" (mouseleave)="left_out()" id="left_sc_div">
     <span style="position: relative;
       top: 50%;
@@ -11,12 +11,12 @@
   <div style="position: absolute; left: 0; right:0; top: 0; bottom:0; background-color: rgba(0,0,0,0.1); z-index:0;
       overflow: hidden;
       overflow-x: scroll;
-    " onload=""
+    " id="pan_scroll"
     >
     <img src="../../../../assets/first page final.png" style="height: 100%; height: -webkit-fill-available;" alt="" srcset="" id="pan_img"
       (mouseover)="lol" (click)="print()" />
   </div>
-  <div style="position: absolute; right: 0;text-align: right; top: 0; background-color: rgba(0,0,0,0.1);height: 100%; width: 40px; z-index:1;"
+  <div style="position: absolute; right: 0px;text-align: right; top: 0; background-color: rgba(0,0,0,0.1);height: 100%; width: 40px; z-index:1;"
     (mouseenter)="right_in()" (mouseleave)="right_out()" id="right_sc_div">
     <span style="position: relative;
         top: 50%;
@@ -25,6 +25,11 @@
         transform: translateY(-50%);">>></span>
   </div>
 </div>
+
+
+
+
+
 <div style="
   min-width:150px;
   max-width:200px;

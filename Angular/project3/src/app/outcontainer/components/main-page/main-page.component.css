@@ -3,16 +3,16 @@
   }
 .f23{
     font-size: 23px;
-    margin-top: 18px;
+   margin-top: 18px;
 
   }
   .f231{
     font-size: 23px;
-    margin-top: 18px;
+   margin-top: 18px;
 
   }
   .mainhead{
-    margin-top: 100px;
+   /*margin-top: 100px;*/
     font-size: 42px;
     color: #06b2bd !important;
   }
@@ -30,12 +30,6 @@
     overflow: hidden;
     height: -webkit-fill-available;
   }
-  .bg2{
-   /* background-image: url('../../../../assets/main_page/background_layer2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100%;*/
-  }
   .center{
       text-align: center;
   }
@@ -46,6 +40,7 @@
   .about strong{
       color: #00ecf1 !important;
   }
+  
   @media only screen and (min-width: 900px) and (max-width: 1280px) {
     .f23{
       font-size: 17px;
@@ -54,7 +49,7 @@
       font-size: 17px;
     }
     .mainhead{
-      margin-top: 40px;
+     /*margin-top: 40px;*/
       font-size: 30px;
     }
     .count{
@@ -66,18 +61,18 @@
       font-size: 13px;
     }
     .f231{
-      margin-top: 60px;
+     /*margin-top: 60px;*/
       font-size: 13px;
     }
     .mainhead{
-      margin-top: -20px;
+     /*margin-top: -20px;*/
       font-size: 30px;
     }
     .count{
       font-size: 25px;
     }
     .about{
-        margin-left: 0px;
+       /*margin-left: 0px;*/
     }
       *{line-height: 25px !important;}
   }
@@ -89,14 +84,14 @@
       font-size: 17px;
     }
     .mainhead{
-      margin-top: 120px;
+     /*margin-top: 120px;*/
       font-size: 30px;
     }
     .count{
       font-size: 25px;
     }
     .about{
-        margin-left: 0px;
+       /*margin-left: 0px;*/
     }
       *{line-height: 15px !important;}
   }
@@ -109,26 +104,26 @@
       font-size: 13px;
     }
     .mainhead{
-      margin-top: -50px;
+      /*margin-top: -50px;*/
       font-size: 25px;
     }
     .count{
       font-size: 20px;
     }
     .about{
-        margin-left: 0px;
+        /*margin-left: 0px;*/
     }
   }
   @media only screen and (min-width: 499px) and (max-width: 599px) {
     .f23{
       font-size: 13px;
-      margin-top: 200px;
+      /*margin-top: 200px;*/
     }
     *{
       line-height: 10px;
     }
     .mainhead{
-      margin-top: -30px;
+      /*margin-top: -30px;*/
       font-size: 20px;
       line-height: 0% !important;
     }
@@ -136,7 +131,7 @@
       font-size: 15px;
     }
     .about{
-        margin-left: 0px;
+        /*margin-left: 0px;*/
     }
   }
   @media only screen and (min-width: 200px) and (max-width: 498px) {
@@ -160,14 +155,14 @@
       font-size: 12px;
     }
     .mainhead{
-      margin-top: 50px;
+      /*margin-top: 50px;*/
       font-size: 16px;
     }
     .count{
       font-size: 13px;
     }
     .about{
-        margin-left: 0px;
+        /*margin-left: 0px;*/
         position: none; bottom:0;left:0%; right:0%;
         text-align: center;
         float: center;
