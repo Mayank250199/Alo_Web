@@ -17,7 +17,7 @@ export class TeamComponent implements OnInit {
       name:'Apurv kaushal',
       pic_name: 'Apurv.png',
       position:'CPO & Co-Founder',
-      details: 'A graduate from IIT Delhi, Apurv leads the in class experience and online+ offline product design & development process for Alo. With an experience of leading multiple social enterprises in the past, he decided to opt out of placements and rather invest him time in creating an impact within the Indian education space.'
+      details: 'A graduate from IIT Delhi, Apurv leads the in class experience and online+ offline product design & development process for Alo. With an experience of leading multiple social enterprises in the past, he decided to opt out of placements and rather invest his time in creating an impact within the Indian education space.'
     },
     {
       name:'Anuj Chopra',
