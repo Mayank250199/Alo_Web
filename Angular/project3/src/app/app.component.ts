@@ -70,4 +70,4 @@ export class AppComponent {
   }
 }
 //document.scrollingElement.on
-//$(window).on('resize',function(){location.reload();});
+$(window).on('resize',function(){location.reload();});
