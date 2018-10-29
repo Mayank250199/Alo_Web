@@ -1,5 +1,5 @@
 * {
-      line-height: 25px !important;
+      line-height: 15px !important;
   }
 .f23{
     font-size: 23px;
@@ -40,8 +40,13 @@
   .about strong{
       color: #00ecf1 !important;
   }
-  
+  @media only screen and (min-width: 1280px) {
+    *{line-height: 25px !important; }
+  }
   @media only screen and (min-width: 900px) and (max-width: 1280px) {
+    *{
+      line-height: 18px !important;
+    }
     .f23{
       font-size: 17px;
     }
@@ -55,8 +60,9 @@
     .count{
       font-size: 30px;
     }
+    *{line-height: 25px !important; }
   }
-  @media only screen and (min-width: 952px) and (max-width: 992px) {
+  @media only screen and (min-width: 955px) and (max-width: 992px) {
     .f23{
       font-size: 13px;
     }
@@ -74,18 +80,18 @@
     .about{
        /*margin-left: 0px;*/
     }
-      *{line-height: 25px !important;}
+      *{line-height: 25px !important; }
   }
   @media only screen and (min-width: 700px) and (max-width: 955px) {
     .f23{
-      font-size: 17px;
+      font-size: 13px;
     }
     .f231{
-      font-size: 17px;
+      font-size: 13px;
     }
     .mainhead{
      /*margin-top: 120px;*/
-      font-size: 30px;
+      font-size: 25px;
     }
     .count{
       font-size: 25px;
@@ -93,7 +99,6 @@
     .about{
        /*margin-left: 0px;*/
     }
-      *{line-height: 15px !important;}
   }
 
   @media only screen and (min-width: 600px) and (max-width: 699px) {
@@ -118,6 +123,9 @@
     .f23{
       font-size: 13px;
       /*margin-top: 200px;*/
+    }
+    .f231{
+      font-size: 13px;
     }
     *{
       line-height: 10px;
@@ -153,6 +161,7 @@
     }
     .f231{
       font-size: 12px;
+      margin-top: 45px;
     }
     .mainhead{
       /*margin-top: 50px;*/

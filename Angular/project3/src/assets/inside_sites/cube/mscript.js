@@ -4,8 +4,11 @@ function update_parent(move_down=false){
 }
 
 var lastY;
+document.scrollingElement.ontouchstart=(e)=>{
+    lastY = e.changedTouches[0].clientY;
+}
 document.scrollingElement.ontouchmove=(e)=>{
-    console.log(e);
+    //console.log(e);
      var currentY = e.changedTouches[0].clientY;
      if(currentY > lastY){
          // moved down
@@ -17,7 +20,7 @@ document.scrollingElement.ontouchmove=(e)=>{
          onScroll(e={deltaX:1, deltaY:1});
          console.log('down')
      }
-     lastY = currentY;
+     //lastY = currentY;
 };
 
 function getDefs(){

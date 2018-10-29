@@ -155,5 +155,14 @@ $(window).on('load', ()=>{
   var pan_img = document.getElementById('pan_img');
   var a = (58.29596412556054/100 - pan_img.parentElement.parentElement.scrollWidth/(2*pan_img.parentElement.scrollWidth))*pan_img.parentElement.scrollWidth
   pan_img.parentElement.scrollLeft=a
-  console.log(a);
+  //console.log(a);
+  $('#pan_img').on('touchstart', (e)=>{
+    init_touch=e.changedTouches[0].screenX
+    init_pos =  document.getElementById('pan_img').parentElement.scrollLeft
+  })
+  $('#pan_img').on('touchmove', (e)=>{
+    document.getElementById('pan_img').parentElement.scrollLeft = init_pos + init_touch-e.changedTouches[0].screenX;
+    //console.log(e);
+  })
 })
+var init_touch=0, init_pos

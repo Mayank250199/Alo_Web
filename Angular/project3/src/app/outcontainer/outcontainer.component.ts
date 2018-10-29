@@ -15,12 +15,8 @@ export class OutcontainerComponent implements OnInit {
   myFullPage
   ngAfterViewInit(){
     
-  }
-}
-$(window).on("load", ()=>{
-
-  if(window.screen.availHeight>window.screen.availWidth)
-    document['body']['webkitRequestFullScreen']();
+    if(window.screen.availHeight>window.screen.availWidth)
+    //document['body']['webkitRequestFullScreen']();
   var mfp=window['fullpage']('#mfullpage', {
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
     scrollOverflow:true,
@@ -35,9 +31,21 @@ $(window).on("load", ()=>{
         $('.mouse_animup').show();
       }
       if(destination.index==2){
-        var vid:any=document.getElementById('responsive').children[0];
-        vid.play();
-        console.log('playing');
+        //var vid:any=document.getElementById('responsive').children[0];
+        var playPromise=document.getElementById('responsive').children[0]['play']();
+
+        if (playPromise !== undefined) {
+          playPromise.then(a => {
+      // Automatic playback started!
+      // Show playing UI.
+          console.log(a);
+          }).catch(error => {
+              // Auto-play was prevented
+              // Show paused UI.
+              console.log(error);
+          });
+          }
+        //console.log('playing');
       }
     }
   });
@@ -46,7 +54,7 @@ $(window).on("load", ()=>{
   document.getElementById('cubeframe').style.height = window.innerHeight+'px';
   document.getElementById('cubeframe').onload=()=>{
     document.getElementById('cubeframe')['contentWindow']['update_parent']=(moveDown)=>{
-    console.log(moveDown);
+    //console.log(moveDown);
       if(!moveDown){
         window['full_page'].moveTo(3);
     }
@@ -55,6 +63,10 @@ $(window).on("load", ()=>{
     } 
   };
  }
+  }
+}
+$(window).on("load", ()=>{
+
   $('#cubeframe').attr({
     src:"../../assets/inside_sites/cube/nindex.html"});
 })

@@ -14,10 +14,24 @@ export class SolutionComponent implements AfterViewInit {
   
   } 
   play(){
-    document.getElementById('responsive').children[0]['play']();
+    
+    var playPromise=document.getElementById('responsive').children[0]['play']();
+
+  if (playPromise !== undefined) {
+    playPromise.then(a => {
+      // Automatic playback started!
+      // Show playing UI.
+      console.log(a);
+    })
+    .catch(error => {
+      // Auto-play was prevented
+      // Show paused UI.
+      console.log(error);
+    });
+  }
   } 
   pause(){
-    document.getElementById('responsive').children[0]['pause']();
+    //document.getElementById('responsive').children[0]['pause']();
   }
   
 
