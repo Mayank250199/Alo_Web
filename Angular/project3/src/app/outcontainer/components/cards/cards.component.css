@@ -134,15 +134,20 @@ body {
 /* ________________________________________________________________________________ */
 
 
-@media only screen and (min-width: 299px) and (max-width: 499px) {
+@media only screen and (min-width: 299px) and (max-width: 800px) {
   #slider label {
   width: 60%;
   }
+  .botext{
+    margin-bottom: -22px;
+    font-size: 20px;
+  }
   .off{
-    top:-90px;
+    top:-20px;
+    font-size: 20px;
       }
   .logo{
-        margin-top:-105px;
+        margin-top:20px;
       }
   #slider div {
     margin: auto;
@@ -155,6 +160,19 @@ body {
   }
   .carnav1{
     margin-top:100px;
+  }
+  @media screen and (min-height:600px){
+    .logo{
+      margin-top:-80px;
+    }
+    .off{
+      top:-90px;
+      font-size: 20px;
+    }
+    .botext{
+      margin-bottom: 42px;
+      font-size: 20px;
+    }
   }
   #s1:checked ~ #slide4, #s2:checked ~ #slide5,
   #s3:checked ~ #slide1, #s4:checked ~ #slide2,
@@ -191,7 +209,7 @@ body {
   }
 
 }
-@media only screen and (min-width: 500px) and (max-width:800px) {
+@media only screen and (min-width: 800px) and (max-width:800px) {
   #slider label {
   width: 60%;
   }

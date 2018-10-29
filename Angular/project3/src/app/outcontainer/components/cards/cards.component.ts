@@ -22,9 +22,7 @@ export class CardsComponent implements AfterViewInit{
         //console.log('start');
     ///};
     //document.getElementById('slider').ondrag = onSlide;
-    $(window).on('load', ()=>{
-        flipinit();
-    })
+    flipinit();
     
     this.cde.detectChanges();
   }
@@ -125,3 +123,4 @@ function flipinit(){
  function divunflip(no){
     $('#slide_flip'+no).flip(false);
  }
+

@@ -15,7 +15,7 @@ export class OutcontainerComponent implements OnInit {
   myFullPage
   ngAfterViewInit(){
     
-    if(window.screen.availHeight>window.screen.availWidth)
+    //if(window.screen.availHeight>window.screen.availWidth)
     //document['body']['webkitRequestFullScreen']();
   var mfp=window['fullpage']('#mfullpage', {
     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
@@ -61,9 +61,9 @@ export class OutcontainerComponent implements OnInit {
     else {
       window['full_page'].moveTo(5);
     } 
-  };
- }
+   };
   }
+ }
 }
 $(window).on("load", ()=>{
 
