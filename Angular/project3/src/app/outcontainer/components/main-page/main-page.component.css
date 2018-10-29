@@ -46,12 +46,34 @@
   .about strong{
       color: #00ecf1 !important;
   }
-  @media only screen and (min-width: 900px) and (max-width: 1280px) {
+  @media only screen and (min-width: 1381px) and (max-width: 1980px) {
     .f23{
-      font-size: 17px;
+      margin-top:-300px;
+      margin-left: 100px;
+      font-size: 30px;
     }
     .f231{
-      font-size: 17px;
+     margin-top:30px; 
+      font-size: 33px;
+    }
+    .mainhead{
+      margin-top: 80px;
+      font-size: 40px;
+      
+    }
+    .count{
+      font-size: 33px;
+    }
+    *{line-height: 25px !important;}
+  }
+  
+  @media only screen and (min-width: 900px) and (max-width: 1380px) {
+    .f23{
+      font-size: 23px;
+    }
+    .f231{
+      top: 5%;
+      font-size: 23px;
     }
     .mainhead{
       margin-top: 40px;
@@ -60,7 +82,9 @@
     .count{
       font-size: 30px;
     }
+    *{line-height: 25px !important;}
   }
+
   @media only screen and (min-width: 952px) and (max-width: 992px) {
     .f23{
       font-size: 13px;
