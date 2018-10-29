@@ -1,7 +1,7 @@
 import { Component, AfterViewInit, ChangeDetectorRef} from '@angular/core';
 
-import '../../../../assets/card_page/js/jquery.flip.min.js';
 declare var $:any, jquery:any;
+import '../../../../assets/card_page/js/jquery.flip.min.js';
 @Component({
   selector: 'app-cards',
   templateUrl: './cards.component.html',
@@ -22,7 +22,10 @@ export class CardsComponent implements AfterViewInit{
         //console.log('start');
     ///};
     //document.getElementById('slider').ondrag = onSlide;
-    flipinit();
+    $(window).on('load', ()=>{
+        flipinit();
+    })
+    
     this.cde.detectChanges();
   }
 
@@ -108,7 +111,7 @@ function onSlide(e){
     //prevslx = e.screenX;
   }
 
- function flipinit(){
+function flipinit(){
     for(var i=1;i<=5;i++){
         $('#slide_flip'+i).flip();
     }

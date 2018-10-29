@@ -62,9 +62,9 @@ export class AppComponent {
   scroll_click() {
     if (window['full_page'].getActiveSection().index == 4) {
       window['full_page'].moveTo(1);
-      document.getElementById('scroller_imgdn').style.display = 'block';
-      document.getElementById('scroller_imgup').style.display = 'none';
-      document.getElementById('scroller_imgboth').style.display = 'none';
+      //document.getElementById('scroller_imgdn').style.display = 'block';
+      //document.getElementById('scroller_imgup').style.display = 'none';
+      //document.getElementById('scroller_imgboth').style.display = 'none';
 
     } else window['full_page'].moveSectionDown();
   }
